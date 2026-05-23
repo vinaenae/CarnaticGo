@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 /** Long CREPE runs on full-length clips (up to 8 min in the UI). */
-export const maxDuration = 600;
+export const maxDuration = 300;
 export const runtime = "nodejs";
 
 /** Proxies WAV upload to Python CREPE pitch service. */

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const maxDuration = 600;
+export const maxDuration = 300;
 export const runtime = "nodejs";
 
 /** Proxies multi-file WAV upload to Python CREPE batch endpoint. */
