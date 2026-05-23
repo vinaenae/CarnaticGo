@@ -178,7 +178,7 @@ export function TeacherSingAlongClient() {
 
       const analysisSamples = boostSamplesForPitchAnalysis(samples);
       const [{ contour, engine }, _shruti] = await Promise.all([
-        buildPitchContourForSingAlongWithEngine(analysisSamples, sampleRate, which),
+        buildPitchContourForSingAlongWithEngine(analysisSamples, sampleRate),
         which === "ref" ? classifyRefShruti() : Promise.resolve(),
       ]);
 
@@ -244,7 +244,7 @@ export function TeacherSingAlongClient() {
     if (clip) setUserClip(clip);
   };
 
-  const useRefRecordingForAnalysis = async () => {
+  const applyRefRecordingForAnalysis = async () => {
     if (refRecorder.phase !== "recorded" || !refRecorder.previewUrl) return;
     const { samples, sampleRate } = refRecorder.getRecording();
     const clip = await loadFromSamples(
@@ -258,7 +258,7 @@ export function TeacherSingAlongClient() {
     if (clip) setRefClip(clip);
   };
 
-  const useUserRecordingForAnalysis = async () => {
+  const applyUserRecordingForAnalysis = async () => {
     if (userRecorder.phase !== "recorded" || !userRecorder.previewUrl) return;
     const { samples, sampleRate } = userRecorder.getRecording();
     const clip = await loadFromSamples(
@@ -405,7 +405,7 @@ export function TeacherSingAlongClient() {
               recorder={refRecorder}
               disabled={micBusy && refRecorder.phase !== "recording"}
               isExtracting={extractingRef}
-              onUseForAnalysis={() => void useRefRecordingForAnalysis()}
+              onUseForAnalysis={() => void applyRefRecordingForAnalysis()}
               downloadFilenamePrefix="reference"
             />
             {!extractingRef ? (
@@ -462,7 +462,7 @@ export function TeacherSingAlongClient() {
               recorder={userRecorder}
               disabled={micBusy && userRecorder.phase !== "recording"}
               isExtracting={extractingUser}
-              onUseForAnalysis={() => void useUserRecordingForAnalysis()}
+              onUseForAnalysis={() => void applyUserRecordingForAnalysis()}
               downloadFilenamePrefix="sing-along"
             />
             {!extractingUser ? (

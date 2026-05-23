@@ -65,7 +65,7 @@ export async function saveHoldSwaraBestSeconds(
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return { ok: true, bestSeconds: seconds, signedIn: false };
+  if (!user) return { ok: true, bestSeconds: 0, signedIn: false };
 
   const { data, error } = await supabase.rpc("upsert_hold_swara_best", {
     p_tanpura_key: key,

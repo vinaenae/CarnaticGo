@@ -59,10 +59,11 @@ export type KritiManifestAttribution = {
   paperDoi?: string;
   citation: string;
   modifications?: string;
-  clips: unknown[];
 };
 
-export function normalizeKritiManifest<T extends KritiManifestAttribution>(
+export function normalizeKritiManifest<
+  T extends KritiManifestAttribution & { clips: unknown[] },
+>(
   raw: T,
 ): T & Pick<typeof KRITI_SAMHITA, "licenseUrl" | "datasetUrl" | "datasetDoiUrl" | "paperUrl"> {
   return {
@@ -78,5 +79,5 @@ export function normalizeKritiManifest<T extends KritiManifestAttribution>(
     paperDoi: raw.paperDoi ?? KRITI_SAMHITA.paperDoi,
     citation: raw.citation || kritiPaperCitation(),
     modifications: raw.modifications ?? KRITI_SAMHITA.modifications,
-  };
+  } as T & Pick<typeof KRITI_SAMHITA, "licenseUrl" | "datasetUrl" | "datasetDoiUrl" | "paperUrl">;
 }

@@ -10,7 +10,7 @@ import {
   type ShopState,
 } from "@/app/auth/shop-actions";
 import { ShopShrutiBox } from "@/components/shop/ShopShrutiBox";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -49,9 +49,9 @@ export function ShopClient({ initialState }: { initialState: ShopState | null })
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <Button asChild>
-            <Link href="/login">Sign in</Link>
-          </Button>
+          <Link href="/login" className={buttonVariants()}>
+            Sign in
+          </Link>
         </CardContent>
       </Card>
     );

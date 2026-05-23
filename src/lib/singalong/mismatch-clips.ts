@@ -79,7 +79,7 @@ function clipWindow(
 ): { start: number; end: number } {
   let s = Math.max(0, start - PAD_SEC);
   let e = Math.min(refDurationSec, end + PAD_SEC);
-  let dur = e - s;
+  const dur = e - s;
   if (dur > MAX_CLIP_SEC) {
     const mid = (s + e) / 2;
     s = Math.max(0, mid - MAX_CLIP_SEC / 2);

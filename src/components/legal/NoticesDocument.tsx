@@ -141,7 +141,10 @@ export function NoticesDocument({ markdown }: { markdown: string }) {
             </ol>
           );
         }
-        return <p key={idx}>{inlineMarkdown(block.text)}</p>;
+        if (block.type === "p") {
+          return <p key={idx}>{inlineMarkdown(block.text)}</p>;
+        }
+        return null;
       })}
     </article>
   );

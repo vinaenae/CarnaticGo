@@ -88,7 +88,7 @@ export function slerpQuaternion(
   b: [number, number, number, number],
   t: number,
 ): [number, number, number, number] {
-  let [ax, ay, az, aw] = a;
+  const [ax, ay, az, aw] = a;
   let [bx, by, bz, bw] = b;
   let dot = ax * bx + ay * by + az * bz + aw * bw;
   if (dot < 0) {

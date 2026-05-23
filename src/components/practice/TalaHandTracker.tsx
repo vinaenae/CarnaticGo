@@ -321,7 +321,6 @@ export function TalaHandTracker({
           <TalaHand3D
             gesture={current.gesture}
             raisedFinger={raisedFinger}
-            countFinger={current.countFinger}
             pulse={pulse}
           />
         </div>

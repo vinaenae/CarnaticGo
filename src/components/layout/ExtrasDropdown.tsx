@@ -70,7 +70,10 @@ export function ExtrasDropdown() {
           className="absolute left-0 top-[calc(100%+6px)] z-50 w-56 rounded-xl border border-border bg-card p-2 shadow-lg ring-1 ring-foreground/5 sm:left-auto sm:right-0"
         >
           <ul className="space-y-0.5">
-            {EXTRAS_NAV_ITEMS.map((item) => (
+            {EXTRAS_NAV_ITEMS.map((item) => {
+              const href =
+                "href" in item && typeof item.href === "string" ? item.href : "#";
+              return (
               <li key={item.id}>
                 {"comingSoon" in item && item.comingSoon ? (
                   <span
@@ -88,7 +91,7 @@ export function ExtrasDropdown() {
                   </span>
                 ) : (
                   <a
-                    href={"href" in item ? item.href : "#"}
+                    href={href}
                     role="menuitem"
                     className={menuItemClass(extrasActive && currentItem === item.id)}
                     onClick={closeAll}
@@ -97,7 +100,8 @@ export function ExtrasDropdown() {
                   </a>
                 )}
               </li>
-            ))}
+            );
+            })}
           </ul>
         </div>
       ) : null}
