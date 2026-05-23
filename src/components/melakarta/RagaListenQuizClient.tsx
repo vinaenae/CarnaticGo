@@ -191,10 +191,12 @@ export function RagaListenQuizClient() {
             <audio
               key={round.clipUrl}
               controls
-              autoPlay
               src={round.clipUrl}
               className="w-full max-w-md"
               preload="auto"
+              onError={() =>
+                setError("Could not load this clip. Try the next round or refresh the page.")
+              }
             >
               Your browser does not support audio.
             </audio>

@@ -20,10 +20,9 @@
 # production
 /build
 
-# Sanidha source concerts (export to public/assets/raga-guess/)
+# Sanidha source concerts (legacy export — not used for current Listen & guess clips)
 /data/sanidha/Concert*/
 /data/sanidha/var/
-/public/assets/raga-guess/*.wav
 
 # Legacy Saraga assets (removed from app — safe to delete locally)
 /data/saraga-repo/
