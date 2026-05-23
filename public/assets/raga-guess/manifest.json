@@ -1,0 +1,141 @@
+{
+  "Kalyani": [
+    "/assets/raga-guess/kriti-a-alamelu-manga.wav",
+    "/assets/raga-guess/kriti-a-ammaravamma.wav",
+    "/assets/raga-guess/kriti-a-bala-tripura-sundari.wav",
+    "/assets/raga-guess/kriti-a-kamalajadala.wav",
+    "/assets/raga-guess/kriti-fs-alamelu-manga.wav",
+    "/assets/raga-guess/kriti-fs-ammaravamma.wav",
+    "/assets/raga-guess/kriti-gs-amba-parameshwari.wav",
+    "/assets/raga-guess/kriti-gs-ambe-ambike-jagadambike.wav",
+    "/assets/raga-guess/kriti-gs-dheena-dhayapari-poorna-katakshina.wav"
+  ],
+  "Sreeranjani": [
+    "/assets/raga-guess/kriti-a-arere-jaya-jaya.wav"
+  ],
+  "Asaveri": [
+    "/assets/raga-guess/kriti-a-dasaratha-nandana.wav",
+    "/assets/raga-guess/kriti-gs-dasaratha-nandana.wav"
+  ],
+  "YadukulaKambhoji": [
+    "/assets/raga-guess/kriti-a-hecharika.wav",
+    "/assets/raga-guess/kriti-fs-jeyathu-hecharika.wav"
+  ],
+  "Hindolam": [
+    "/assets/raga-guess/kriti-a-hindolam-swarapallavi.wav",
+    "/assets/raga-guess/kriti-fs-hindolam-swara-pallavi.wav",
+    "/assets/raga-guess/kriti-fs-samajavaragamana.wav",
+    "/assets/raga-guess/kriti-g-hindolam-swarapallavi.wav"
+  ],
+  "Kambhoji": [
+    "/assets/raga-guess/kriti-a-kamala-sanavam.wav",
+    "/assets/raga-guess/kriti-a-kambhoji-varnam.wav",
+    "/assets/raga-guess/kriti-g-kamala-sanavam-2.wav"
+  ],
+  "Shankarabharanam": [
+    "/assets/raga-guess/kriti-a-mayatita-swaroopini.wav",
+    "/assets/raga-guess/kriti-a-sankarabharanam-varnam.wav",
+    "/assets/raga-guess/kriti-fs-arul-puri.wav",
+    "/assets/raga-guess/kriti-fs-bhavamulona.wav",
+    "/assets/raga-guess/kriti-fs-mayatheeta-swaroopini.wav",
+    "/assets/raga-guess/kriti-g-analekara.wav",
+    "/assets/raga-guess/kriti-g-bhavamulona.wav",
+    "/assets/raga-guess/kriti-g-mayatita-swaroopini.wav",
+    "/assets/raga-guess/kriti-g-sakti-sahita-ganapatim.wav",
+    "/assets/raga-guess/kriti-g-sankarabharanam-varnam.wav",
+    "/assets/raga-guess/kriti-gs-saktisahitaganapatim.wav",
+    "/assets/raga-guess/kriti-gs-samtatam-pahimam.wav"
+  ],
+  "Mohanam": [
+    "/assets/raga-guess/kriti-a-ninnu-kori.wav",
+    "/assets/raga-guess/kriti-a-raravenu.wav",
+    "/assets/raga-guess/kriti-fs-evarura.wav",
+    "/assets/raga-guess/kriti-fs-raravenu.wav",
+    "/assets/raga-guess/kriti-g-evarura.wav",
+    "/assets/raga-guess/kriti-gs-anjaneya-gunadhama.wav",
+    "/assets/raga-guess/kriti-gs-ninnu-kori.wav"
+  ],
+  "Kedaram": [
+    "/assets/raga-guess/kriti-a-ramachandraya-janaka.wav",
+    "/assets/raga-guess/kriti-a-varaveena1.wav",
+    "/assets/raga-guess/kriti-fs-varaveena.wav",
+    "/assets/raga-guess/kriti-g-varaveena.wav"
+  ],
+  "Todi": [
+    "/assets/raga-guess/kriti-a-sarojadalanetri.wav",
+    "/assets/raga-guess/kriti-fs-sarojadalanetri.wav"
+  ],
+  "Malahari": [
+    "/assets/raga-guess/kriti-a-sri-gananatha.wav",
+    "/assets/raga-guess/kriti-g-jaya-lambodhara-pahimam.wav"
+  ],
+  "Bilahari": [
+    "/assets/raga-guess/kriti-a-sri-govinda.wav",
+    "/assets/raga-guess/kriti-g-paridana.wav"
+  ],
+  "Mukhari": [
+    "/assets/raga-guess/kriti-a-syamale-meenakshi.wav"
+  ],
+  "Bhairavi": [
+    "/assets/raga-guess/kriti-a-upacharamu.wav",
+    "/assets/raga-guess/kriti-fs-upacharamu.wav",
+    "/assets/raga-guess/kriti-g-upacharamu.wav"
+  ],
+  "Sahana": [
+    "/assets/raga-guess/kriti-a-vandanamu-raghunandana.wav"
+  ],
+  "Surutti": [
+    "/assets/raga-guess/kriti-a-varaveena2.wav"
+  ],
+  "Hamsadhwani": [
+    "/assets/raga-guess/kriti-fs-hamsadhwani-varnam.wav",
+    "/assets/raga-guess/kriti-fs-vatapi.wav",
+    "/assets/raga-guess/kriti-gs-paahi-paahi-gajanana.wav"
+  ],
+  "SuddhaSaveri": [
+    "/assets/raga-guess/kriti-fs-kalaharana.wav",
+    "/assets/raga-guess/kriti-gs-analekara.wav"
+  ],
+  "Devagandhari": [
+    "/assets/raga-guess/kriti-fs-koluvaiyunnade-nagumomo.wav",
+    "/assets/raga-guess/kriti-fs-ramaneepai.wav",
+    "/assets/raga-guess/kriti-fs-sita-kalyana-ksheera-sagara.wav",
+    "/assets/raga-guess/kriti-g-dheena-dhaya-pari-poorna.wav"
+  ],
+  "Abhogi": [
+    "/assets/raga-guess/kriti-fs-maragatha-valli.wav",
+    "/assets/raga-guess/kriti-g-maragathavalli.wav"
+  ],
+  "Jaganmohini": [
+    "/assets/raga-guess/kriti-fs-sobhillu.wav"
+  ],
+  "Arabhi": [
+    "/assets/raga-guess/kriti-g-gana-ganamunaku-1.wav"
+  ],
+  "Vasanta": [
+    "/assets/raga-guess/kriti-g-sitamma-mayamma.wav"
+  ],
+  "Mayamalavagowla": [
+    "/assets/raga-guess/kriti-gs-amba-bhavanee.wav",
+    "/assets/raga-guess/kriti-gs-gana-ganamunaku.wav",
+    "/assets/raga-guess/kriti-gs-inta-tamasamelane.wav",
+    "/assets/raga-guess/kriti-gs-jaya-lambodhara.wav",
+    "/assets/raga-guess/kriti-gs-sharanu-sharanu.wav"
+  ],
+  "Anandabhairavi": [
+    "/assets/raga-guess/kriti-gs-kamala-sanavam.wav",
+    "/assets/raga-guess/kriti-gs-muchukumdavarada.wav"
+  ],
+  "Kurinji": [
+    "/assets/raga-guess/kriti-gs-ramachandraya-janaka.wav"
+  ],
+  "Swaravali": [
+    "/assets/raga-guess/kriti-gs-raravenu.wav"
+  ],
+  "EshaManohari": [
+    "/assets/raga-guess/kriti-gs-shri-gananatham.wav"
+  ],
+  "SindhuBhairavi": [
+    "/assets/raga-guess/kriti-gs-shri-ram-jaya-ram.wav"
+  ]
+}

@@ -1,0 +1,38 @@
+.pop {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  z-index: 30;
+  pointer-events: none;
+  font-family: var(--font-heading, inherit);
+  font-size: clamp(1.35rem, 4vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  transform: translateX(-50%);
+  animation: quiz-points-rise 1.35s ease-out forwards;
+  text-shadow: 0 2px 12px rgb(0 0 0 / 0.12);
+}
+
+.positive {
+  color: hsl(152 55% 38%);
+}
+
+.negative {
+  color: hsl(0 72% 48%);
+}
+
+@keyframes quiz-points-rise {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(12px) scale(0.85);
+  }
+  12% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1.08);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-48px) scale(1);
+  }
+}

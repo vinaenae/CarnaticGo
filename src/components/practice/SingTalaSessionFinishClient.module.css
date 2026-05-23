@@ -1,0 +1,32 @@
+.notesInput {
+  --ruled-line: 22px;
+  width: 100%;
+  resize: vertical;
+  min-height: calc(var(--ruled-line) * 5 + 16px);
+  border: 1px solid #ddd4c7;
+  border-radius: calc(var(--radius-md) - 2px);
+  background-color: #fffdf8;
+  padding: 8px 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: var(--ruled-line);
+  color: #3d3429;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent calc(var(--ruled-line) - 1px),
+    #e8dfd3 calc(var(--ruled-line) - 1px),
+    #e8dfd3 var(--ruled-line)
+  );
+  background-attachment: local;
+  background-origin: content-box;
+}
+
+.notesInput:focus {
+  outline: 2px solid color-mix(in oklch, var(--primary) 35%, transparent);
+  outline-offset: 1px;
+}
+
+.notesInput::placeholder {
+  color: #b5a898;
+}

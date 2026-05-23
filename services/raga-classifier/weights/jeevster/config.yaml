@@ -1,0 +1,130 @@
+default: &DEFAULT
+
+  #data
+  exp_dir: carnatic/ckpts
+  metadata_labeled_path: labeled_small_wav_metadata.json
+  metadata_unlabeled_path: unlabeled_data/unlabeled_mp3_metadata.json
+  num_files_per_raga_path: metadata_small.json
+  num_classes: 150
+  use_frac: 1
+  use_unlabeled_data: !!bool False
+  labeled_data_dir: labeled_data_small
+  clip_length: 30
+  sample_rate: 8000
+  normalize: !!bool True
+
+  #training
+  batch_size: 16
+  num_data_workers: 16
+  n_epochs: 100
+  lr: 0.001
+  class_imbalance_weights: !!bool False
+  patience: 10
+  train_frac: 0.8
+  
+  #model
+  model: 'base'
+  n_input: 2 #stereo
+  stride: 16
+  n_channel: 32
+  max_pool_every: 1
+  
+  #logging
+  save_checkpoint: !!bool False
+  wandb_api_key: f7892f37dd96b5f1da5c85a410300bb661f3c4de
+  log_to_wandb: !!bool False
+  
+
+default_0.7: &DEFAULT_0.7
+
+  <<: *DEFAULT
+  metadata_labeled_path: labeled_0.7_wav_metadata.json
+  num_files_per_raga_path: metadata_0.7.json
+  labeled_data_dir: labeled_data_0.7
+
+default_0.9: &DEFAULT_0.9
+
+  <<: *DEFAULT
+  metadata_labeled_path: labeled_0.9_wav_metadata.json
+  num_files_per_raga_path: metadata_0.9.json
+  labeled_data_dir: labeled_data_0.9
+  train_frac: 0.85
+  num_classes: 200
+
+  
+resnet: &RESNET
+
+  <<: *DEFAULT
+  model: 'resnet'
+  n_blocks: 5 #for resnet
+  n_channel: 128
+
+resnet_0.7: &RESNET_0.7
+
+  <<: *DEFAULT_0.7
+  model: 'resnet'
+  n_blocks: 10 #for resnet
+  n_channel: 300
+  num_classes: 150
+
+resnet_0.9: &RESNET_0.9
+
+  <<: *DEFAULT_0.9
+  model: 'resnet'
+  n_blocks: 10 #for resnet
+  n_channel: 350
+  max_pool_every: 1 #downsample every other res block
+
+
+wav2vec_0.7: &WAV2VEC_0.7
+  <<: *DEFAULT_0.7
+
+  model: 'wav2vec'
+  n_input: 1 #mono
+
+  #transformer parameters (this config leads to around 29M params)
+  extractor_mode: "layer_norm"
+  extractor_conv_layer_config: None #harcoded for now, fix this at some point
+  extractor_conv_bias: !!bool True
+  encoder_embed_dim: 512
+  encoder_projection_dropout: 0
+  encoder_pos_conv_kernel: 3
+  encoder_pos_conv_groups: 32
+  encoder_num_layers: 12
+  encoder_num_heads: 16
+  encoder_attention_dropout: 0
+  encoder_ff_interm_features: 1024
+  encoder_ff_interm_dropout: 0
+  encoder_dropout: 0
+  encoder_layer_norm_first: !!bool True
+  encoder_layer_drop: 0
+
+
+wav2vec_0.9: &WAV2VEC_0.9
+  <<: *DEFAULT_0.9
+
+  model: 'wav2vec'
+  n_input: 1 #mono
+
+  #transformer parameters (this config leads to around 29M params)
+  extractor_mode: "layer_norm"
+  extractor_conv_layer_config: None #harcoded for now, fix this at some point
+  extractor_conv_bias: !!bool True
+  encoder_embed_dim: 512
+  encoder_projection_dropout: 0
+  encoder_pos_conv_kernel: 3
+  encoder_pos_conv_groups: 32
+  encoder_num_layers: 12
+  encoder_num_heads: 16
+  encoder_attention_dropout: 0
+  encoder_ff_interm_features: 1024
+  encoder_ff_interm_dropout: 0
+  encoder_dropout: 0
+  encoder_layer_norm_first: !!bool True
+  encoder_layer_drop: 0
+
+
+
+
+
+  

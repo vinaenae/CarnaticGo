@@ -1,0 +1,7 @@
+{
+  "config.json": "C:\\Users\\vinay\\OneDrive\\Documents\\CarnaticGo\\services\\raga-classifier\\weights\\sam-carnatic\\config.json",
+  "preprocessor_config.json": "C:\\Users\\vinay\\OneDrive\\Documents\\CarnaticGo\\services\\raga-classifier\\weights\\sam-carnatic\\preprocessor_config.json",
+  "model.safetensors": "C:\\Users\\vinay\\OneDrive\\Documents\\CarnaticGo\\services\\raga-classifier\\weights\\sam-carnatic\\model.safetensors",
+  "best_model.pth": "C:\\Users\\vinay\\OneDrive\\Documents\\CarnaticGo\\services\\raga-classifier\\weights\\sam-carnatic\\best_model.pth",
+  "README.md": "C:\\Users\\vinay\\OneDrive\\Documents\\CarnaticGo\\services\\raga-classifier\\weights\\sam-carnatic\\README.md"
+}

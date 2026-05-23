@@ -1,0 +1,3995 @@
+{
+  "ragas": [
+    {
+      "id": "Abheri",
+      "name": "Abheri",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Abhogi",
+      "name": "Abhogi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        }
+      ]
+    },
+    {
+      "id": "Ahiri",
+      "name": "Ahiri",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Amritavarshini",
+      "name": "Amritavarshini",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Anandabhairavi",
+      "name": "Anandabhairavi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Andolika",
+      "name": "Andolika",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Arabhi",
+      "name": "Arabhi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Saveri",
+      "name": "Saveri",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Atana",
+      "name": "Atana",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Bageshri",
+      "name": "Bageshri",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Bahudari",
+      "name": "Bahudari",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Begada",
+      "name": "Begada",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Bhairavi",
+      "name": "Bhairavi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Bhoopalam",
+      "name": "Bhoopalam",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        }
+      ]
+    },
+    {
+      "id": "Bilahari",
+      "name": "Bilahari",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Bowli",
+      "name": "Bowli",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Brindavanasaranga",
+      "name": "Brindavanasaranga",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Chakravakam",
+      "name": "Chakravakam",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Chalanata",
+      "name": "Chalanata",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₃",
+          "hz": 285
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₃",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Chandrajyoti",
+      "name": "Chandrajyoti",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₁",
+          "hz": 269
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        }
+      ]
+    },
+    {
+      "id": "Chandrakauns",
+      "name": "Chandrakauns",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Charukesi",
+      "name": "Charukesi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Darbar",
+      "name": "Darbar",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Darbarikanada",
+      "name": "Darbarikanada",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Desh",
+      "name": "Desh",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Devagandhari",
+      "name": "Devagandhari",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Dhanyasi",
+      "name": "Dhanyasi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Dharmavati",
+      "name": "Dharmavati",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Dwijavanti",
+      "name": "Dwijavanti",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Gambheeranattai",
+      "name": "Gambheeranattai",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Ganamurti",
+      "name": "Ganamurti",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₁",
+          "hz": 269
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Gowlai",
+      "name": "Gowlai",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Hamirkalyani",
+      "name": "Hamirkalyani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Hamsadhwani",
+      "name": "Hamsadhwani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Hamsanaadam",
+      "name": "Hamsanaadam",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Hamsanandi",
+      "name": "Hamsanandi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Harikambhoji",
+      "name": "Harikambhoji",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Hemavati",
+      "name": "Hemavati",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Hindolam",
+      "name": "Hindolam",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Huseni",
+      "name": "Huseni",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Jaganmohini",
+      "name": "Jaganmohini",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Janaranjani",
+      "name": "Janaranjani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Jayanthashri",
+      "name": "Jayanthashri",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Kadanakuthoohalam",
+      "name": "Kadanakuthoohalam",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Kalavati",
+      "name": "Kalavati",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        }
+      ]
+    },
+    {
+      "id": "Kalyanavasantham",
+      "name": "Kalyanavasantham",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Kalyani",
+      "name": "Kalyani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Kamalamanohari",
+      "name": "Kamalamanohari",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Kambhoji",
+      "name": "Kambhoji",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Kannada",
+      "name": "Kannada",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Kannadagowlai",
+      "name": "Kannadagowlai",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Kapi",
+      "name": "Kapi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Karaharapriya",
+      "name": "Karaharapriya",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Kharaharapriya",
+      "name": "Kharaharapriya",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "KarnaRanjani",
+      "name": "KarnaRanjani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Kedaragowlai",
+      "name": "Kedaragowlai",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Kaanada",
+      "name": "Kaanada",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Kedaram",
+      "name": "Kedaram",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Keeravani",
+      "name": "Keeravani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Khamas",
+      "name": "Khamas",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Kuntalavarali",
+      "name": "Kuntalavarali",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Lalitha",
+      "name": "Lalitha",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Lathangi",
+      "name": "Lathangi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Maand",
+      "name": "Maand",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Madhuvanti",
+      "name": "Madhuvanti",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Madhyamavathi",
+      "name": "Madhyamavathi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Malahari",
+      "name": "Malahari",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        }
+      ]
+    },
+    {
+      "id": "Malayamarutham",
+      "name": "Malayamarutham",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Mandari",
+      "name": "Mandari",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Manirangu",
+      "name": "Manirangu",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Mayamalavagowla",
+      "name": "Mayamalavagowla",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "MohanaKalyani",
+      "name": "MohanaKalyani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Mohanam",
+      "name": "Mohanam",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        }
+      ]
+    },
+    {
+      "id": "Mukhari",
+      "name": "Mukhari",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Nagaswarali",
+      "name": "Nagaswarali",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        }
+      ]
+    },
+    {
+      "id": "Nalinakanthi",
+      "name": "Nalinakanthi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Nasikabhooshani",
+      "name": "Nasikabhooshani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₃",
+          "hz": 285
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Natabhairavi",
+      "name": "Natabhairavi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Natakurinji",
+      "name": "Natakurinji",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Nattai",
+      "name": "Nattai",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₃",
+          "hz": 285
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₃",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "NavarasaKanada",
+      "name": "NavarasaKanada",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Nayaki",
+      "name": "Nayaki",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Neelambari",
+      "name": "Neelambari",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Neelimathi",
+      "name": "Neelimathi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₃",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Panthuvarali",
+      "name": "Panthuvarali",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Poornachandrika",
+      "name": "Poornachandrika",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Poorvikalyani",
+      "name": "Poorvikalyani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Ramapriya",
+      "name": "Ramapriya",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Ranjani",
+      "name": "Ranjani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Rasikapriya",
+      "name": "Rasikapriya",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Rathipathipriya",
+      "name": "Rathipathipriya",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Reethigowla",
+      "name": "Reethigowla",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Revagupti",
+      "name": "Revagupti",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        }
+      ]
+    },
+    {
+      "id": "Revati",
+      "name": "Revati",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Sahana",
+      "name": "Sahana",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Sama",
+      "name": "Sama",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        }
+      ]
+    },
+    {
+      "id": "Saramati",
+      "name": "Saramati",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Saranga",
+      "name": "Saranga",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Sarasangi",
+      "name": "Sarasangi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Saraswathi",
+      "name": "Saraswathi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Sankarabharanam",
+      "name": "Sankarabharanam",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Shanmukapriya",
+      "name": "Shanmukapriya",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Sri",
+      "name": "Sri",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Simhendramadhyamam",
+      "name": "Simhendramadhyamam",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Sindhubhairavi",
+      "name": "Sindhubhairavi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Sivaranjani",
+      "name": "Sivaranjani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        }
+      ]
+    },
+    {
+      "id": "Sowrashtram",
+      "name": "Sowrashtram",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Sriranjani",
+      "name": "Sriranjani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Subhapantuvarali",
+      "name": "Subhapantuvarali",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Shuddhadhanyasi",
+      "name": "Shuddhadhanyasi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Shuddhasaveri",
+      "name": "Shuddhasaveri",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        }
+      ]
+    },
+    {
+      "id": "Sumanesaranjani",
+      "name": "Sumanesaranjani",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Sunandavinodini",
+      "name": "Sunandavinodini",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Suruti",
+      "name": "Suruti",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Surya",
+      "name": "Surya",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Thilang",
+      "name": "Thilang",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Thodi",
+      "name": "Thodi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Vachaspati",
+      "name": "Vachaspati",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Valaji",
+      "name": "Valaji",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Varamu",
+      "name": "Varamu",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    },
+    {
+      "id": "Vasantha",
+      "name": "Vasantha",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₁",
+          "hz": 254
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₃",
+          "hz": 451
+        }
+      ]
+    },
+    {
+      "id": "Vasanthi",
+      "name": "Vasanthi",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₁",
+          "hz": 380
+        }
+      ]
+    },
+    {
+      "id": "Vijayanagari",
+      "name": "Vijayanagari",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₂",
+          "hz": 285
+        },
+        {
+          "token": "M₂",
+          "hz": 338.5
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        }
+      ]
+    },
+    {
+      "id": "Yadukulakambhoji",
+      "name": "Yadukulakambhoji",
+      "swaras": [
+        {
+          "token": "S",
+          "hz": 240
+        },
+        {
+          "token": "R₂",
+          "hz": 269
+        },
+        {
+          "token": "G₃",
+          "hz": 302
+        },
+        {
+          "token": "M₁",
+          "hz": 320
+        },
+        {
+          "token": "P",
+          "hz": 358.5
+        },
+        {
+          "token": "D₂",
+          "hz": 402
+        },
+        {
+          "token": "N₂",
+          "hz": 426
+        }
+      ]
+    }
+  ],
+  "chartHz": {
+    "S": 240,
+    "Ṣ": 480,
+    "R₁": 254,
+    "R₂": 269,
+    "R₃": 285,
+    "G₁": 269,
+    "G₂": 285,
+    "G₃": 302,
+    "M₁": 320,
+    "M₂": 338.5,
+    "P": 358.5,
+    "D₁": 380,
+    "D₂": 402,
+    "D₃": 426,
+    "N₁": 402,
+    "N₂": 426,
+    "N₃": 451
+  }
+}

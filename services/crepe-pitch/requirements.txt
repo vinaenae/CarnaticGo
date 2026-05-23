@@ -1,0 +1,8 @@
+setuptools==69.5.1
+wheel>=0.42.0
+numpy>=1.26.0
+scipy>=1.11.0
+tensorflow-cpu>=2.15.0,<2.21.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.9

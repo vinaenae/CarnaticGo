@@ -1,0 +1,29 @@
+Tanpura / drone samples: pa–SA–SA–sa (same stringing). Each file is calibrated to one Sa anchor frequency.
+
+Authoritative list: `src/lib/audio/tanpura-manifest.ts` (Sa Hz + filename + preset id). No Western note chart is used at runtime.
+
+Files are served as /assets/tanpura/<filename>.
+
+To (re)generate placeholder WAVs (Sa+Pa sine mix, 44.1kHz mono):
+  npm run generate:tanpura
+
+Expected WAV names (match manifest `file` field):
+  pa-sa-sa-sa-kattai-1.wav
+  pa-sa-sa-sa-kattai-1-5.wav
+  pa-sa-sa-sa-kattai-2.wav
+  pa-sa-sa-sa-kattai-2-5.wav
+  pa-sa-sa-sa-kattai-3.wav
+  pa-sa-sa-sa-kattai-4.wav
+  pa-sa-sa-sa-kattai-4-5.wav
+  pa-sa-sa-sa-kattai-5.wav
+  pa-sa-sa-sa-kattai-5-5.wav
+  pa-sa-sa-sa-kattai-6.wav
+  pa-sa-sa-sa-kattai-6-5.wav
+  pa-sa-sa-sa-kattai-7.wav
+  pa-sa-sa-sa-kattai-7-5.wav
+
+Preset ids (config / TanpuraService.play):
+  kattai_1, kattai_1_5, kattai_2, kattai_2_5, kattai_3, kattai_4, kattai_4_5,
+  kattai_5, kattai_5_5, kattai_6, kattai_6_5, kattai_7, kattai_7_5
+
+If you use another format, keep the same stem and update `tanpura-manifest.ts` (`file` + `nominalSaHz`).

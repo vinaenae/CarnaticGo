@@ -1,0 +1,7 @@
+Expected WAVs (after running dataset download + copy):
+
+  python scripts/build_raga_scales_dataset.py --audio --audio-limit 20
+  npm run copy:scale-quiz-audio
+
+Filenames: {slug}-1.wav and {slug}-2.wav for carnatic-ragas labels (e.g. kalyani-1.wav).
+The scale quiz maps each rāga id to a slug (see src/lib/scale-quiz-audio.ts).

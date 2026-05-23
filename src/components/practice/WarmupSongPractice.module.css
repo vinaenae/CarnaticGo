@@ -1,0 +1,73 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+}
+
+.topBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.backBtn {
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--card);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  background: color-mix(in oklch, var(--muted) 40%, var(--card));
+}
+
+.topTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.topBarEnd {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.showShrutiBtn {
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid color-mix(in oklch, var(--primary) 35%, var(--border));
+  background: color-mix(in oklch, var(--primary) 8%, var(--card));
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.showShrutiBtn:hover {
+  background: color-mix(in oklch, var(--primary) 16%, var(--card));
+}
+
+.doneBtn {
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid color-mix(in oklch, var(--primary) 45%, var(--border));
+  background: var(--primary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--primary-foreground);
+  cursor: pointer;
+}
+
+.doneBtn:hover {
+  filter: brightness(1.05);
+}

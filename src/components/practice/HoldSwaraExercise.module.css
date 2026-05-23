@@ -1,0 +1,85 @@
+.root {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.bestBanner {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--muted-foreground);
+  margin: 0 0 1.25rem;
+  padding: 0.65rem 1rem;
+  border-radius: 0.75rem;
+  background: color-mix(in oklch, var(--primary) 8%, var(--card));
+  border: 1px solid var(--border);
+}
+
+.bestBanner strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.holdTimer {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 0.35rem;
+  color: var(--foreground);
+  letter-spacing: 0.02em;
+}
+
+.holdTimerActive {
+  color: var(--tuner-in);
+}
+
+.holdHint {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  margin: 0 0 1rem;
+  line-height: 1.45;
+}
+
+.instructions {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted-foreground);
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
+.nextBtn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid color-mix(in oklch, var(--primary) 45%, var(--border));
+  background: color-mix(in oklch, var(--primary) 14%, var(--card));
+  color: var(--foreground);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.nextBtn:hover {
+  background: color-mix(in oklch, var(--primary) 22%, var(--card));
+}
+
+.miniMeterOuter {
+  display: flex;
+  justify-content: center;
+  margin: 0.35rem auto 0.5rem;
+  height: 2.35rem;
+  overflow: hidden;
+}
+
+.miniMeterInner {
+  width: 16rem;
+  transform: scale(0.46);
+  transform-origin: center top;
+  pointer-events: none;
+}

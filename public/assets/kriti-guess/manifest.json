@@ -1,0 +1,658 @@
+{
+  "source": "kriti-samhita",
+  "version": 1,
+  "clipSeconds": 20.0,
+  "license": "CC BY 4.0",
+  "licenseName": "Creative Commons Attribution 4.0 International",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "datasetUrl": "https://data.mendeley.com/datasets/nkdm57hvw3/2",
+  "datasetDoi": "10.17632/nkdm57hvw3.2",
+  "datasetDoiUrl": "https://doi.org/10.17632/nkdm57hvw3.2",
+  "datasetCitation": "Konduri S., Pendyala K., Pendyala V. (2024). KritiSamhita: South Indian Music Tonic Recognition Dataset (Audio) [Data set]. Mendeley Data. https://doi.org/10.17632/nkdm57hvw3.2",
+  "paperUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11286976/",
+  "paperDoi": "10.1016/j.dib.2024.110730",
+  "citation": "Konduri S., Pendyala K., Pendyala V. (2024). KritiSamhita: A machine learning dataset of South Indian classical music audio clips with tonic classification. Data in Brief, 55, 110730. https://doi.org/10.1016/j.dib.2024.110730",
+  "modifications": "Mono WAV at 22050 Hz from published 20 s MP3 snippets for an educational match-the-tanpura quiz.",
+  "clips": [
+    {
+      "id": "03bc88bdb1f0cb15",
+      "url": "/assets/kriti-guess/clips/03bc88bdb1f0cb15.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "0520fc69b3eff953",
+      "url": "/assets/kriti-guess/clips/0520fc69b3eff953.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "093f299d1108592e",
+      "url": "/assets/kriti-guess/clips/093f299d1108592e.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "0abe12ecc5e0ff58",
+      "url": "/assets/kriti-guess/clips/0abe12ecc5e0ff58.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "0b13564300a57812",
+      "url": "/assets/kriti-guess/clips/0b13564300a57812.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Analekara",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "1143db96fc69a489",
+      "url": "/assets/kriti-guess/clips/1143db96fc69a489.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "124a12817b8118be",
+      "url": "/assets/kriti-guess/clips/124a12817b8118be.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "17c33a371f16062a",
+      "url": "/assets/kriti-guess/clips/17c33a371f16062a.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "1cd62d6fcddab9a1",
+      "url": "/assets/kriti-guess/clips/1cd62d6fcddab9a1.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "2a90a112a181063a",
+      "url": "/assets/kriti-guess/clips/2a90a112a181063a.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Analekara",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "2c5dcc30f43b7a3d",
+      "url": "/assets/kriti-guess/clips/2c5dcc30f43b7a3d.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Bhavamulona",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "2cea08da03194162",
+      "url": "/assets/kriti-guess/clips/2cea08da03194162.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Analekara",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "2e9f08947392670c",
+      "url": "/assets/kriti-guess/clips/2e9f08947392670c.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Parameshwari",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "35ba4a6859b58bcd",
+      "url": "/assets/kriti-guess/clips/35ba4a6859b58bcd.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "360acce16878cfa8",
+      "url": "/assets/kriti-guess/clips/360acce16878cfa8.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "38876fcb32e3617f",
+      "url": "/assets/kriti-guess/clips/38876fcb32e3617f.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "3a3391bf5646c6df",
+      "url": "/assets/kriti-guess/clips/3a3391bf5646c6df.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "435b5e3dba0319e3",
+      "url": "/assets/kriti-guess/clips/435b5e3dba0319e3.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Parameshwari",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "446bce29c321fbe0",
+      "url": "/assets/kriti-guess/clips/446bce29c321fbe0.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Analekara",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "45d886368dfac6d6",
+      "url": "/assets/kriti-guess/clips/45d886368dfac6d6.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "4645106ed57800b9",
+      "url": "/assets/kriti-guess/clips/4645106ed57800b9.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Parameshwari",
+      "durationSeconds": 12.96
+    },
+    {
+      "id": "4cef62235cae0a67",
+      "url": "/assets/kriti-guess/clips/4cef62235cae0a67.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "4f78e9a8e68041ab",
+      "url": "/assets/kriti-guess/clips/4f78e9a8e68041ab.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "513607585dccf25e",
+      "url": "/assets/kriti-guess/clips/513607585dccf25e.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Bhavanee",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "51e28f4191f2dcc5",
+      "url": "/assets/kriti-guess/clips/51e28f4191f2dcc5.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Ambe Ambike Jagadambike",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "53dd31cdf672c830",
+      "url": "/assets/kriti-guess/clips/53dd31cdf672c830.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "55dafef56f8ec274",
+      "url": "/assets/kriti-guess/clips/55dafef56f8ec274.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "5898d1fab9e7f724",
+      "url": "/assets/kriti-guess/clips/5898d1fab9e7f724.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "6bd0e0dadd078274",
+      "url": "/assets/kriti-guess/clips/6bd0e0dadd078274.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "6d7f81755bc17aeb",
+      "url": "/assets/kriti-guess/clips/6d7f81755bc17aeb.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "784e2e8dd994f7e3",
+      "url": "/assets/kriti-guess/clips/784e2e8dd994f7e3.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "7cfa8b2e2031540b",
+      "url": "/assets/kriti-guess/clips/7cfa8b2e2031540b.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Parameshwari",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "7e1e81fe67555958",
+      "url": "/assets/kriti-guess/clips/7e1e81fe67555958.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Ambe Ambike Jagadambike",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "8343c7e8360a0e1b",
+      "url": "/assets/kriti-guess/clips/8343c7e8360a0e1b.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "8347812b094e156a",
+      "url": "/assets/kriti-guess/clips/8347812b094e156a.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Parameshwari",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "847c93994791dff6",
+      "url": "/assets/kriti-guess/clips/847c93994791dff6.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "8a7a52fc4c672baf",
+      "url": "/assets/kriti-guess/clips/8a7a52fc4c672baf.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Parameshwari",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "8bee70ad26683a21",
+      "url": "/assets/kriti-guess/clips/8bee70ad26683a21.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "8e77b8a054d9f6b2",
+      "url": "/assets/kriti-guess/clips/8e77b8a054d9f6b2.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 0.21
+    },
+    {
+      "id": "919f2b59dc14aa41",
+      "url": "/assets/kriti-guess/clips/919f2b59dc14aa41.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 7.01
+    },
+    {
+      "id": "91f2ab5ae177ca6f",
+      "url": "/assets/kriti-guess/clips/91f2ab5ae177ca6f.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Ammaravamma",
+      "durationSeconds": 0.6
+    },
+    {
+      "id": "9535dc2ef62f7017",
+      "url": "/assets/kriti-guess/clips/9535dc2ef62f7017.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "9550fc5cadda699b",
+      "url": "/assets/kriti-guess/clips/9550fc5cadda699b.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "9f2daec430dd75f8",
+      "url": "/assets/kriti-guess/clips/9f2daec430dd75f8.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Ambe Ambike Jagadambike",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "9fdf749e7654ea5f",
+      "url": "/assets/kriti-guess/clips/9fdf749e7654ea5f.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Parameshwari",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "a02d8b987b9b7d77",
+      "url": "/assets/kriti-guess/clips/a02d8b987b9b7d77.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "a07118674fa1a8c8",
+      "url": "/assets/kriti-guess/clips/a07118674fa1a8c8.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "af335b5c2279ccbf",
+      "url": "/assets/kriti-guess/clips/af335b5c2279ccbf.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Bhavamulona",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "b0a7866ab156d0f5",
+      "url": "/assets/kriti-guess/clips/b0a7866ab156d0f5.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Analekara",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "b3d125a2c1a9c71f",
+      "url": "/assets/kriti-guess/clips/b3d125a2c1a9c71f.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "b5565605a39b3436",
+      "url": "/assets/kriti-guess/clips/b5565605a39b3436.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 17.84
+    },
+    {
+      "id": "b5af6a6d857aa1c0",
+      "url": "/assets/kriti-guess/clips/b5af6a6d857aa1c0.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Analekara",
+      "durationSeconds": 18.9
+    },
+    {
+      "id": "bfdfddec05283733",
+      "url": "/assets/kriti-guess/clips/bfdfddec05283733.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "c61cec5f98ac6cb2",
+      "url": "/assets/kriti-guess/clips/c61cec5f98ac6cb2.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "cf6bd57c78fe88f8",
+      "url": "/assets/kriti-guess/clips/cf6bd57c78fe88f8.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Ambe Ambike Jagadambike",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "d054a1e0ce7cbf69",
+      "url": "/assets/kriti-guess/clips/d054a1e0ce7cbf69.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Bhavamulona",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "d201f69a4b608f17",
+      "url": "/assets/kriti-guess/clips/d201f69a4b608f17.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Analekara",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "d3f2cf8a242697ea",
+      "url": "/assets/kriti-guess/clips/d3f2cf8a242697ea.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "d629dfcf367e5709",
+      "url": "/assets/kriti-guess/clips/d629dfcf367e5709.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "d9d2e303781c9187",
+      "url": "/assets/kriti-guess/clips/d9d2e303781c9187.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "da1b4917f563db93",
+      "url": "/assets/kriti-guess/clips/da1b4917f563db93.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "e05a80c1223c59e3",
+      "url": "/assets/kriti-guess/clips/e05a80c1223c59e3.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "e2ac481a230e2ecb",
+      "url": "/assets/kriti-guess/clips/e2ac481a230e2ecb.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "e33f6ca779c63b51",
+      "url": "/assets/kriti-guess/clips/e33f6ca779c63b51.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 2.82
+    },
+    {
+      "id": "e61b7eb0e1f10948",
+      "url": "/assets/kriti-guess/clips/e61b7eb0e1f10948.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Bhavanee",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "e68e9d49c79e4a2b",
+      "url": "/assets/kriti-guess/clips/e68e9d49c79e4a2b.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Ambe Ambike Jagadambike",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "e8eae7c9f7318636",
+      "url": "/assets/kriti-guess/clips/e8eae7c9f7318636.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "f010f47e7e9f8816",
+      "url": "/assets/kriti-guess/clips/f010f47e7e9f8816.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Ambe Ambike Jagadambike",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "f0711c330fcbc705",
+      "url": "/assets/kriti-guess/clips/f0711c330fcbc705.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Parameshwari",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "f2a4f9bc924cafb1",
+      "url": "/assets/kriti-guess/clips/f2a4f9bc924cafb1.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "f4bc0d77567e04d9",
+      "url": "/assets/kriti-guess/clips/f4bc0d77567e04d9.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Bhavanee",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "f933986b42254172",
+      "url": "/assets/kriti-guess/clips/f933986b42254172.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Bhavanee",
+      "durationSeconds": 1.98
+    },
+    {
+      "id": "f93f4dbee1451be8",
+      "url": "/assets/kriti-guess/clips/f93f4dbee1451be8.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "f9d4f5dd99c0d73e",
+      "url": "/assets/kriti-guess/clips/f9d4f5dd99c0d73e.wav",
+      "tonic": "A",
+      "kattaiKey": "kattai_6",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "fb394429b71d9ffe",
+      "url": "/assets/kriti-guess/clips/fb394429b71d9ffe.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Analekara",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "fbec997fc64a7c1c",
+      "url": "/assets/kriti-guess/clips/fbec997fc64a7c1c.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Ambe Ambike Jagadambike",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "fcd60f6bfe3cd8b1",
+      "url": "/assets/kriti-guess/clips/fcd60f6bfe3cd8b1.wav",
+      "tonic": "G#",
+      "kattaiKey": "kattai_5_5",
+      "songName": "Amba Bhavanee",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "fd096273f20c0b81",
+      "url": "/assets/kriti-guess/clips/fd096273f20c0b81.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Ammaravamma",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "fe276f8424fa69d2",
+      "url": "/assets/kriti-guess/clips/fe276f8424fa69d2.wav",
+      "tonic": "G",
+      "kattaiKey": "kattai_5",
+      "songName": "Analekara",
+      "durationSeconds": 20.0
+    },
+    {
+      "id": "ff578dd8d99c0c2a",
+      "url": "/assets/kriti-guess/clips/ff578dd8d99c0c2a.wav",
+      "tonic": "F#",
+      "kattaiKey": "kattai_4_5",
+      "songName": "Alamelu Manga",
+      "durationSeconds": 20.0
+    }
+  ]
+}

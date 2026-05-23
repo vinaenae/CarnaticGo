@@ -1,0 +1,10 @@
+# CarnaticGo rhythm analysis service — librosa + FastAPI
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+pydantic>=2.10.0
+numpy>=1.26.0,<2.3
+scipy>=1.11.0
+librosa>=0.10.2
+soundfile>=0.12.1
+numba>=0.59.0

@@ -1,0 +1,928 @@
+.root {
+  width: 100%;
+  font-family: var(--font-sans);
+  background: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem 1rem 1rem;
+  box-shadow: 0 1px 3px color-mix(in oklch, var(--foreground) 8%, transparent);
+}
+
+.stepLabel {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.flowBackBtn {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--card);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--foreground);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.flowBackBtn:hover {
+  background: color-mix(in oklch, var(--muted) 40%, var(--card));
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.headerMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.header h2 {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 2px;
+  color: var(--foreground);
+}
+
+.header .sub {
+  margin-bottom: 0;
+}
+
+.sub {
+  font-size: 0.8125rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.ctrlRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 520px) {
+  .ctrlRow {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.shrutiDetector {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid color-mix(in oklch, var(--primary) 24%, var(--border));
+  background: color-mix(in oklch, var(--primary) 5%, var(--card));
+}
+
+.shrutiDetectorTitle {
+  margin: 0 0 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.shrutiDetectorStatus {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--muted-foreground);
+}
+
+.shrutiDetectorOn {
+  color: var(--tuner-in);
+}
+
+.shrutiDetectorOff {
+  color: var(--tuner-out);
+}
+
+.scaleInfoCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.scaleInfoMain {
+  flex: 1 1 200px;
+  min-width: 0;
+  font-size: 0.8125rem;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+
+.scaleInfoMain p {
+  margin: 0 0 6px;
+}
+
+.scaleInfoMain strong {
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+.scaleInfoCardHelpOnly {
+  justify-content: flex-end;
+}
+
+.scaleInfoHelp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 0 0 auto;
+  width: min(100%, 18rem);
+}
+
+.scaleInfoHelpStandalone {
+  width: 100%;
+  max-width: 22rem;
+}
+
+.helpBox {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-align: left;
+  padding: 10px 14px;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--foreground);
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.helpBox:hover {
+  border-color: color-mix(in oklch, var(--primary) 45%, var(--border));
+  background: color-mix(in oklch, var(--primary) 6%, var(--card));
+}
+
+.helpBoxActive {
+  border-color: var(--primary);
+  background: color-mix(in oklch, var(--primary) 10%, var(--card));
+  box-shadow: 0 0 0 1px color-mix(in oklch, var(--primary) 25%, transparent);
+}
+
+.scaleInfoExplanation {
+  flex: 1 1 100%;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--muted-foreground);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid color-mix(in oklch, var(--primary) 30%, var(--border));
+  background: var(--card);
+}
+
+.scaleInfoExplanation p {
+  margin: 0;
+  white-space: pre-line;
+}
+
+@media (min-width: 640px) {
+  .scaleInfoHelp {
+    width: 18rem;
+    margin-left: auto;
+  }
+
+  .scaleInfoHelpStandalone {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.ctrl {
+  background: var(--secondary);
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+}
+
+.ctrlLbl {
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  margin-bottom: 5px;
+}
+
+.select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  color: var(--foreground);
+  outline: none;
+  cursor: pointer;
+}
+
+.tonicStrip {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  background: var(--muted);
+  border: 1px solid color-mix(in oklch, var(--primary) 40%, var(--border));
+  border-radius: var(--radius-md);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.tonicStrip:hover {
+  background: color-mix(in oklch, var(--primary) 10%, var(--muted));
+}
+
+.songReadyBtn {
+  flex-shrink: 0;
+  min-width: 11rem;
+  padding: 10px 20px;
+  background: color-mix(in oklch, var(--primary) 12%, var(--card));
+  border: 1px solid color-mix(in oklch, var(--primary) 45%, var(--border));
+  border-radius: var(--radius-md);
+  color: var(--foreground);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.songReadyBtn:hover {
+  background: color-mix(in oklch, var(--primary) 20%, var(--card));
+}
+
+@media (max-width: 520px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .songReadyBtn {
+    width: 100%;
+  }
+}
+
+.meterCard {
+  --tuner-in: oklch(0.52 0.16 145);
+  --tuner-out: oklch(0.55 0.2 25);
+  background: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.meterCardCompact {
+  padding: 0.65rem 0.85rem;
+  margin-bottom: 10px;
+}
+
+.meterCardCompact .snapLabel {
+  font-size: 9px;
+  margin-bottom: 2px;
+}
+
+.meterCardCompact .snapName {
+  font-size: 1.2rem;
+  margin-bottom: 0.45rem;
+}
+
+.meterCardCompact .trackWrap {
+  height: 36px;
+  margin-bottom: 4px;
+}
+
+.meterCardCompact .needle {
+  width: 2px;
+  height: 28px;
+}
+
+.meterCardCompact .needle::before,
+.meterCardCompact .needle::after {
+  width: 7px;
+  height: 7px;
+}
+
+.meterCardCompact .needle::before {
+  top: -4px;
+}
+
+.meterCardCompact .needle::after {
+  bottom: -4px;
+}
+
+.meterCardCompact .trackLbls {
+  font-size: 9px;
+  margin-bottom: 6px;
+}
+
+.meterCardCompact .pill {
+  font-size: 11px;
+  padding: 3px 10px;
+}
+
+.snapLabel {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  margin-bottom: 4px;
+}
+
+.snapTargetHz {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  margin: -0.65rem 0 0.85rem;
+  line-height: 1.4;
+}
+
+.snapName {
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+  transition: color 0.15s;
+  color: var(--foreground);
+}
+
+.trackWrap {
+  position: relative;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.track {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: var(--meter-out-left) var(--meter-green-size) var(--meter-out-right);
+  overflow: hidden;
+}
+
+/* Green width = ±SHIFFMAN_IN_TUNE_HZ on the needle scale (set inline on .track) */
+.zoneOut {
+  background: color-mix(in oklch, var(--tuner-out) 72%, var(--secondary));
+}
+
+.zoneIn {
+  background: color-mix(in oklch, var(--tuner-in) 65%, var(--secondary));
+}
+
+.cmark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: color-mix(in oklch, var(--foreground) 25%, transparent);
+}
+
+.nlayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.needle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 54px;
+  border-radius: 2px;
+  background: var(--foreground);
+  transition:
+    left 0.05s linear,
+    background 0.2s ease;
+  will-change: left;
+}
+
+.needle::before,
+.needle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.needle::before {
+  top: -7px;
+}
+.needle::after {
+  bottom: -7px;
+}
+
+.trackLbls {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--muted-foreground);
+  letter-spacing: 0.04em;
+  padding: 0 2px;
+}
+
+.centsRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0 6px;
+}
+
+.centsNum {
+  font-family: var(--font-mono);
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  min-width: 110px;
+  text-align: right;
+  color: var(--muted-foreground);
+  transition: color 0.18s;
+}
+
+.centsUnit {
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.pill {
+  display: block;
+  margin: 14px auto 6px;
+  width: fit-content;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  background: var(--secondary);
+  color: var(--muted-foreground);
+  border: 1px solid var(--border);
+  transition:
+    background 0.18s,
+    color 0.18s,
+    border-color 0.18s;
+}
+
+.pillIn {
+  background: color-mix(in oklch, var(--tuner-in) 16%, var(--card));
+  color: var(--tuner-in);
+  border-color: color-mix(in oklch, var(--tuner-in) 40%, var(--border));
+}
+.pillFlat {
+  background: color-mix(in oklch, var(--tuner-out) 14%, var(--card));
+  color: var(--tuner-out);
+  border-color: color-mix(in oklch, var(--tuner-out) 38%, var(--border));
+}
+.pillSharp {
+  background: color-mix(in oklch, var(--tuner-out) 14%, var(--card));
+  color: var(--tuner-out);
+  border-color: color-mix(in oklch, var(--tuner-out) 38%, var(--border));
+}
+
+.detHz {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted-foreground);
+  min-height: 15px;
+}
+
+.engineTag {
+  text-align: center;
+  font-size: 10px;
+  color: var(--muted-foreground);
+  margin-top: 4px;
+}
+
+.micBtn {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 13px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--card);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--foreground);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition:
+    background 0.14s,
+    border-color 0.14s,
+    color 0.14s;
+}
+
+.micBtn:hover {
+  background: var(--accent);
+}
+
+.micBtnOn {
+  background: color-mix(in oklch, var(--primary) 12%, var(--card));
+  border-color: color-mix(in oklch, var(--primary) 40%, var(--border));
+  color: var(--primary);
+}
+
+.engineBadge {
+  font-size: 11px;
+  color: var(--muted-foreground);
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.liveFreq {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 0.5rem;
+  color: var(--foreground);
+  letter-spacing: 0.02em;
+}
+
+.tunerCredit {
+  font-size: 10px;
+  color: var(--muted-foreground);
+  text-align: center;
+  margin: 1rem 0 0;
+  line-height: 1.4;
+}
+
+.tunerCredit a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.engineBadgeHint {
+  font-size: 10px;
+  opacity: 0.85;
+}
+
+.engineNote {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  text-align: center;
+  margin-top: 6px;
+  line-height: 1.45;
+}
+
+.err {
+  font-size: 12px;
+  color: var(--destructive);
+  text-align: center;
+  margin-top: 6px;
+  min-height: 16px;
+}
+
+.gridHdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.gridLbl {
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+.gridHint {
+  font-size: 11px;
+  color: var(--muted-foreground);
+}
+
+.sgrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+}
+
+.cellStatic {
+  cursor: default;
+}
+
+.cell {
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 4px 5px;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    border-color 0.12s,
+    background 0.12s,
+    box-shadow 0.12s;
+  position: relative;
+}
+
+.cell:hover {
+  background: var(--accent);
+  border-color: color-mix(in oklch, var(--primary) 25%, var(--border));
+}
+
+.cellCur {
+  background: color-mix(in oklch, var(--primary) 10%, var(--card));
+  border-color: color-mix(in oklch, var(--primary) 40%, var(--border));
+}
+
+.cellHit {
+  background: color-mix(in oklch, var(--chart-4) 18%, var(--card));
+  border-color: color-mix(in oklch, var(--chart-4) 50%, var(--border));
+  box-shadow: 0 0 0 1px color-mix(in oklch, var(--chart-4) 20%, transparent);
+}
+
+.cellMiss {
+  background: color-mix(in oklch, var(--destructive) 12%, var(--card));
+  border-color: color-mix(in oklch, var(--destructive) 40%, var(--border));
+}
+
+.snum {
+  font-size: 9px;
+  color: var(--muted-foreground);
+  display: block;
+  margin-bottom: 1px;
+}
+
+.sname {
+  font-size: 12px;
+  display: block;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.cellCur .sname {
+  color: var(--primary);
+}
+
+.shz {
+  font-size: 9px;
+  color: var(--muted-foreground);
+  display: block;
+  font-family: var(--font-mono);
+}
+
+.playIcon {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  font-size: 9px;
+  color: var(--muted-foreground);
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.cell:hover .playIcon {
+  opacity: 1;
+}
+
+@keyframes csPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.cellPlaying .sname {
+  animation: csPulse 0.5s ease-in-out infinite;
+  color: var(--primary);
+}
+
+.scaleBlock {
+  margin-bottom: 12px;
+}
+
+.scaleBlockHdr {
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  margin-bottom: 6px;
+}
+
+.scaleFlow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.scaleFlow .cell {
+  min-width: 52px;
+  flex: 0 1 auto;
+}
+
+.swaraTapBlock {
+  margin-bottom: 12px;
+}
+
+.tapToHearCallout {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 2px solid color-mix(in oklch, var(--primary) 55%, var(--border));
+  border-radius: var(--radius-md);
+  background: color-mix(in oklch, var(--primary) 10%, var(--card));
+}
+
+.tapToHearBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid var(--control-border, #000);
+  background: var(--card);
+  font-size: 11px;
+  color: var(--primary);
+}
+
+.tapToHearTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--foreground);
+  line-height: 1.3;
+}
+
+.tapToHearSub {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted-foreground);
+}
+
+.notationSection {
+  margin-bottom: 0;
+}
+
+.sgridAboveTonic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.notationLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  margin-bottom: 6px;
+}
+
+.notationLbl {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--foreground);
+  flex-shrink: 0;
+}
+
+.notationFlow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.notationCell {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: var(--card);
+  border: 1px solid var(--control-border, #000);
+  border-radius: var(--radius-md);
+  padding: 6px 10px 5px;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 1px 0 color-mix(in oklch, var(--foreground) 8%, transparent);
+  transition:
+    background 0.12s,
+    box-shadow 0.12s,
+    transform 0.1s;
+  position: relative;
+}
+
+.notationCell:hover {
+  background: color-mix(in oklch, var(--primary) 10%, var(--card));
+  transform: translateY(-1px);
+}
+
+.notationCell:active {
+  transform: translateY(0);
+}
+
+.notationCell.cellCur {
+  background: color-mix(in oklch, var(--primary) 12%, var(--card));
+  border-color: color-mix(in oklch, var(--primary) 45%, var(--control-border, #000));
+}
+
+.notationCell.cellHit {
+  background: color-mix(in oklch, var(--chart-4) 14%, var(--card));
+  border-color: color-mix(in oklch, var(--chart-4) 50%, var(--control-border, #000));
+}
+
+.notationCell.cellMiss {
+  background: color-mix(in oklch, var(--destructive) 10%, var(--card));
+  border-color: color-mix(in oklch, var(--destructive) 45%, var(--control-border, #000));
+}
+
+.notationSname {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--foreground);
+}
+
+.notationCell.cellCur .notationSname {
+  color: var(--primary);
+}
+
+.notationCell.cellHit .notationSname {
+  color: var(--chart-4);
+}
+
+.notationCell.cellMiss .notationSname {
+  color: var(--destructive);
+}
+
+.notationPlayIcon {
+  font-size: 8px;
+  line-height: 1;
+  color: var(--primary);
+  opacity: 0.85;
+}
+
+.notationCell:hover .notationPlayIcon,
+.notationCell.cellPlaying .notationPlayIcon {
+  opacity: 1;
+}
+
+.notationCell.cellPlaying .notationSname {
+  animation: csPulse 0.5s ease-in-out infinite;
+  color: var(--primary);
+}

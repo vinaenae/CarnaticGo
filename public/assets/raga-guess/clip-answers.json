@@ -1,0 +1,23 @@
+{
+  "/assets/raga-guess/kriti-fs-koluvaiyunnade-nagumomo.wav": {
+    "song": "Koluvaiyunnade Nagumomo",
+    "raga": "Devagandhari",
+    "aliases": [
+      "Bhairavi"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-dasaratha-nandana.wav": {
+    "song": "Dasaratha Nandana",
+    "raga": "Asaveri",
+    "aliases": [
+      "Mayamalavagowla"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-paahi-paahi-gajanana.wav": {
+    "song": "Paahi Paahi Gajanana",
+    "raga": "Hamsadhwani",
+    "aliases": [
+      "Shankarabharanam"
+    ]
+  }
+}

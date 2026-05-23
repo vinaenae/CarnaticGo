@@ -1,0 +1,283 @@
+{
+  "source": "kriti-samhita",
+  "tonics": [
+    "G#"
+  ],
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "datasetUrl": "https://data.mendeley.com/datasets/nkdm57hvw3/2",
+  "datasetDoi": "10.17632/nkdm57hvw3.2",
+  "ragas": [
+    {
+      "id": "Abhogi",
+      "name": "Abhogi",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Anandabhairavi",
+      "name": "Anandabhairavi",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Anandha Bhairavi"
+      ]
+    },
+    {
+      "id": "Arabhi",
+      "name": "Arabhi",
+      "melakartaNum": 29,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Asaveri",
+      "name": "Asaveri",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Bhairavi",
+      "name": "Bhairavi",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Bilahari",
+      "name": "Bilahari",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Devagandhari",
+      "name": "Devagandhari",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Devagandhari",
+        "Devgandhari"
+      ]
+    },
+    {
+      "id": "EshaManohari",
+      "name": "Esha Manohari",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Eshamanohari",
+        "Esha Manohari"
+      ]
+    },
+    {
+      "id": "Hamsadhwani",
+      "name": "Hamsadhwani",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Hindolam",
+      "name": "Hindolam",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Jaganmohini",
+      "name": "Jaganmohini",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Kalyani",
+      "name": "Kalyani",
+      "melakartaNum": 65,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Mechakalyani"
+      ]
+    },
+    {
+      "id": "Kambhoji",
+      "name": "Kambhoji",
+      "melakartaNum": 28,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Kedaram",
+      "name": "Kedaram",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Kedaragaula"
+      ]
+    },
+    {
+      "id": "Kurinji",
+      "name": "Kurinji",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Malahari",
+      "name": "Malahari",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Mayamalavagowla",
+      "name": "Mayamalavagowla",
+      "melakartaNum": 15,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Mayamalavagaula",
+        "Malavagowla",
+        "Maayamalavagowla"
+      ]
+    },
+    {
+      "id": "Mohanam",
+      "name": "Mohanam",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Mukhari",
+      "name": "Mukhari",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Sahana",
+      "name": "Sahana",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "Shankarabharanam",
+      "name": "Shankarabharanam",
+      "melakartaNum": 29,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Sankarabharanam"
+      ]
+    },
+    {
+      "id": "SindhuBhairavi",
+      "name": "Sindhu Bhairavi",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Sindhubhairavi",
+        "Sindhu Bhairavi"
+      ]
+    },
+    {
+      "id": "Sreeranjani",
+      "name": "Sreeranjani",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": []
+    },
+    {
+      "id": "SuddhaSaveri",
+      "name": "Suddha Saveri",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Suddhasaveri",
+        "Shuddha Saveri",
+        "Suddha Saveri"
+      ]
+    },
+    {
+      "id": "Surutti",
+      "name": "Surutti",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Suruti",
+        "Shuddhasaveri"
+      ]
+    },
+    {
+      "id": "Swaravali",
+      "name": "Swaravali",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Svaravali"
+      ]
+    },
+    {
+      "id": "Todi",
+      "name": "Todi",
+      "melakartaNum": 8,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Hanumatodi",
+        "Hanumathodi"
+      ]
+    },
+    {
+      "id": "Vasanta",
+      "name": "Vasanta",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Vasanti"
+      ]
+    },
+    {
+      "id": "YadukulaKambhoji",
+      "name": "Yadukula Kambhoji",
+      "melakartaNum": null,
+      "arohanam": "",
+      "avarohanam": "",
+      "aliases": [
+        "Yadukulakambhoji",
+        "Kambhoji",
+        "Yadukula Kambhoji"
+      ]
+    }
+  ]
+}
