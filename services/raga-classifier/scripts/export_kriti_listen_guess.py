@@ -173,12 +173,11 @@ def _export_tonic(
         print(f"Wrote {out_name} <- {song_label} ({raga_name})")
 
         extra = also_accept.get(norm_key, [])
-        if extra:
-            clip_answers[url] = {
-                "song": song_label,
-                "raga": raga_name,
-                "aliases": extra,
-            }
+        clip_answers[url] = {
+            "song": song_label,
+            "raga": raga_name,
+            "aliases": list(extra),
+        }
 
         if raga_id not in ragas_by_id:
             meta = _RAGA_META.get(raga_name, {})

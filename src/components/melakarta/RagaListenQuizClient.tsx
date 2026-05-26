@@ -24,6 +24,7 @@ type Phase = "loading" | "listening" | "result";
 type Round = {
   clipUrl: string;
   answer: QuizRaga;
+  song?: string;
 };
 
 function formatPct(n: number) {
@@ -52,8 +53,8 @@ export function RagaListenQuizClient() {
   const [error, setError] = useState<string | null>(null);
 
   const startRound = useCallback(
-    async (m: GuessClipManifest, excludeId?: string) => {
-      const next = await randomListenRound(m, excludeId);
+    async (m: GuessClipManifest, excludeClipUrl?: string) => {
+      const next = await randomListenRound(m, excludeClipUrl);
       if (!next) {
         setError("No listen clips in manifest — export KritiSamhita A-shruti clips first.");
         setPhase("loading");
@@ -122,7 +123,7 @@ export function RagaListenQuizClient() {
 
   const nextRound = () => {
     if (!manifest) return;
-    void startRound(manifest, round?.answer.id);
+    void startRound(manifest, round?.clipUrl);
   };
 
   if (phase === "loading" || !manifest) {
@@ -272,8 +273,22 @@ export function RagaListenQuizClient() {
               {won ? "Correct!" : "Not quite"}
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
-              This clip is in{" "}
-              <span className="font-medium text-foreground">{round.answer.name}</span>.
+              {round.song ? (
+                <>
+                  <span className="font-medium text-foreground">{round.song}</span>
+                  {" — "}
+                </>
+              ) : null}
+              This recording is labeled{" "}
+              <span className="font-medium text-foreground">{round.answer.name}</span>
+              {round.answer.aliases.length > 0 && (
+                <span className="text-muted-foreground">
+                  {" "}
+                  (also accepts: {round.answer.aliases.slice(0, 4).join(", ")}
+                  {round.answer.aliases.length > 4 ? "…" : ""})
+                </span>
+              )}
+              .
               {!won && (firstGuess || lastGuess) && (
                 <>
                   {" "}

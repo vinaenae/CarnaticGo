@@ -21,6 +21,11 @@ export type ClipAnswerOverride = {
   aliases: string[];
 };
 
+export type ManifestClip = {
+  url: string;
+  ragaId: string;
+};
+
 export const KRITI_LISTEN_EXPORT_CMD =
   "python services/raga-classifier/scripts/export_kriti_listen_guess.py";
 
@@ -53,54 +58,142 @@ export async function loadClipAnswerOverrides(): Promise<
   }
 }
 
+/** Song slug shared across shruti folders (e.g. raravenu, kamala-sanavam). */
+export function clipSongSlug(clipUrl: string): string {
+  const file = clipUrl.split("/").pop() ?? "";
+  return file.replace(/^kriti-[a-z0-9#]+-/i, "").replace(/\.wav$/i, "");
+}
+
+export function listManifestClips(manifest: GuessClipManifest): ManifestClip[] {
+  const clips: ManifestClip[] = [];
+  for (const [ragaId, urls] of Object.entries(manifest)) {
+    for (const url of urls) {
+      clips.push({ url, ragaId });
+    }
+  }
+  return clips;
+}
+
+export function buildSongSlugIndex(
+  manifest: GuessClipManifest,
+): Map<string, ManifestClip[]> {
+  const index = new Map<string, ManifestClip[]>();
+  for (const clip of listManifestClips(manifest)) {
+    const slug = clipSongSlug(clip.url);
+    const list = index.get(slug) ?? [];
+    list.push(clip);
+    index.set(slug, list);
+  }
+  return index;
+}
+
 export function guessClipsForRaga(manifest: GuessClipManifest, ragaId: string): string[] {
   const canon = canonicalListenQuizRagaId(ragaId) ?? ragaId;
   return manifest[canon] ?? manifest[ragaId] ?? [];
 }
 
-export function pickRandomClip(
-  manifest: GuessClipManifest,
-  raga: QuizRaga,
-): { url: string; ragaId: string } | null {
-  const paths = guessClipsForRaga(manifest, raga.id);
-  if (paths.length === 0) return null;
-  const url = paths[Math.floor(Math.random() * paths.length)]!;
-  return { url, ragaId: raga.id };
+function ragaById(ragas: QuizRaga[], ragaId: string): QuizRaga | undefined {
+  const canon = canonicalListenQuizRagaId(ragaId) ?? ragaId;
+  return listenQuizRagaById(canon) ?? ragas.find((r) => r.id === canon);
 }
 
+function fallbackRaga(ragaId: string): QuizRaga {
+  return {
+    id: ragaId,
+    name: ragaId,
+    melakartaNum: null,
+    arohanam: "",
+    avarohanam: "",
+    aliases: [],
+  };
+}
+
+function addRagaLabels(aliases: Set<string>, raga: QuizRaga) {
+  aliases.add(raga.name);
+  for (const a of raga.aliases) aliases.add(a);
+}
+
+/**
+ * Resolve the scored answer for one clip URL.
+ * Primary label = manifest bucket for this recording; aliases include map alsoAccept
+ * and other rāga labels used for the same song at different shrutis.
+ */
+export function resolveListenClipAnswer(
+  clipUrl: string,
+  manifestRagaId: string,
+  manifest: GuessClipManifest,
+  overrides: Record<string, ClipAnswerOverride>,
+  ragas: QuizRaga[],
+  songIndex: Map<string, ManifestClip[]>,
+): QuizRaga {
+  const base = ragaById(ragas, manifestRagaId) ?? fallbackRaga(manifestRagaId);
+  const accepted = new Set<string>();
+  addRagaLabels(accepted, base);
+
+  const override = overrides[clipUrl];
+  if (override) {
+    const primary = ragaById(ragas, override.raga);
+    if (primary) addRagaLabels(accepted, primary);
+    else accepted.add(override.raga);
+    for (const alias of override.aliases) accepted.add(alias);
+  }
+
+  const slug = clipSongSlug(clipUrl);
+  for (const variant of songIndex.get(slug) ?? []) {
+    if (variant.ragaId === manifestRagaId) continue;
+    const other = ragaById(ragas, variant.ragaId);
+    if (other) addRagaLabels(accepted, other);
+  }
+
+  accepted.delete(base.name);
+  return {
+    ...base,
+    aliases: [...accepted],
+  };
+}
+
+/** @deprecated Use {@link resolveListenClipAnswer}. */
 export function answerForClip(
   base: QuizRaga,
   clipUrl: string,
   overrides: Record<string, ClipAnswerOverride>,
+  manifest: GuessClipManifest,
+  ragas: QuizRaga[],
 ): QuizRaga {
-  const o = overrides[clipUrl];
-  if (!o?.aliases.length) return base;
-  const extra = o.aliases.filter((a) => normalizeAlias(a) !== normalizeAlias(base.name));
-  if (extra.length === 0) return base;
-  return { ...base, aliases: [...new Set([...base.aliases, ...extra])] };
-}
-
-function normalizeAlias(s: string) {
-  return s.trim().toLowerCase();
+  const songIndex = buildSongSlugIndex(manifest);
+  const bucket =
+    listManifestClips(manifest).find((c) => c.url === clipUrl)?.ragaId ?? base.id;
+  return resolveListenClipAnswer(clipUrl, bucket, manifest, overrides, ragas, songIndex);
 }
 
 export async function randomListenRound(
   manifest: GuessClipManifest,
-  excludeId?: string,
-): Promise<{ clipUrl: string; answer: QuizRaga } | null> {
+  excludeClipUrl?: string,
+): Promise<{ clipUrl: string; answer: QuizRaga; song?: string } | null> {
   const [ragas, overrides] = await Promise.all([
     loadListenQuizRagas(),
     loadClipAnswerOverrides(),
   ]);
-  const pool = excludeId ? ragas.filter((r) => r.id !== excludeId) : [...ragas];
-  const withClips = pool.filter((r) => guessClipsForRaga(manifest, r.id).length > 0);
-  if (withClips.length === 0) return null;
-  const answer = withClips[Math.floor(Math.random() * withClips.length)]!;
-  const pick = pickRandomClip(manifest, answer);
-  if (!pick) return null;
-  const resolved = listenQuizRagaById(answer.id) ?? answer;
+  const songIndex = buildSongSlugIndex(manifest);
+  let clips = listManifestClips(manifest);
+  if (excludeClipUrl) {
+    clips = clips.filter((c) => c.url !== excludeClipUrl);
+  }
+  if (clips.length === 0) return null;
+
+  const pick = clips[Math.floor(Math.random() * clips.length)]!;
+  const answer = resolveListenClipAnswer(
+    pick.url,
+    pick.ragaId,
+    manifest,
+    overrides,
+    ragas,
+    songIndex,
+  );
+
   return {
     clipUrl: pick.url,
-    answer: answerForClip(resolved, pick.url, overrides),
+    answer,
+    song: overrides[pick.url]?.song,
   };
 }

@@ -3,7 +3,8 @@
     "song": "Koluvaiyunnade Nagumomo",
     "raga": "Devagandhari",
     "aliases": [
-      "Bhairavi"
+      "Bhairavi",
+      "Devgandhari"
     ]
   },
   "/assets/raga-guess/kriti-gs-dasaratha-nandana.wav": {
@@ -18,6 +19,525 @@
     "raga": "Hamsadhwani",
     "aliases": [
       "Shankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-alamelu-manga.wav": {
+    "song": "Alamelu Manga",
+    "raga": "Kalyani",
+    "aliases": [
+      "Mechakalyani"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-ammaravamma.wav": {
+    "song": "Ammaravamma",
+    "raga": "Kalyani",
+    "aliases": [
+      "Mechakalyani"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-bala-tripura-sundari.wav": {
+    "song": "Bala Tripura Sundari",
+    "raga": "Kalyani",
+    "aliases": [
+      "Mechakalyani"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-kamalajadala.wav": {
+    "song": "Kamalajadala",
+    "raga": "Kalyani",
+    "aliases": [
+      "Mechakalyani"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-alamelu-manga.wav": {
+    "song": "Alamelu Manga",
+    "raga": "Kalyani",
+    "aliases": [
+      "Mechakalyani"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-ammaravamma.wav": {
+    "song": "Ammaravamma",
+    "raga": "Kalyani",
+    "aliases": [
+      "Mechakalyani"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-amba-parameshwari.wav": {
+    "song": "Amba Parameshwari",
+    "raga": "Kalyani",
+    "aliases": [
+      "Mechakalyani"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-ambe-ambike-jagadambike.wav": {
+    "song": "Ambe Ambike Jagadambike",
+    "raga": "Kalyani",
+    "aliases": [
+      "Mechakalyani"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-dheena-dhayapari-poorna-katakshina.wav": {
+    "song": "Dheena Dhayapari Poorna Katakshina",
+    "raga": "Kalyani",
+    "aliases": [
+      "Mechakalyani"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-arere-jaya-jaya.wav": {
+    "song": "Arere Jaya Jaya",
+    "raga": "Sreeranjani",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-dasaratha-nandana.wav": {
+    "song": "Dasaratha Nandana",
+    "raga": "Asaveri",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-hecharika.wav": {
+    "song": "Hecharika",
+    "raga": "Yadukula Kambhoji",
+    "aliases": [
+      "Yadukulakambhoji",
+      "Kambhoji"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-jeyathu-hecharika.wav": {
+    "song": "Jeyathu Hecharika",
+    "raga": "Yadukula Kambhoji",
+    "aliases": [
+      "Yadukulakambhoji",
+      "Kambhoji"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-hindolam-swarapallavi.wav": {
+    "song": "Hindolam Swarapallavi",
+    "raga": "Hindolam",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-fs-hindolam-swara-pallavi.wav": {
+    "song": "Hindolam Swara Pallavi",
+    "raga": "Hindolam",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-fs-samajavaragamana.wav": {
+    "song": "Samajavaragamana",
+    "raga": "Hindolam",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-g-hindolam-swarapallavi.wav": {
+    "song": "Hindolam Swarapallavi",
+    "raga": "Hindolam",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-kamala-sanavam.wav": {
+    "song": "Kamala Sanavam",
+    "raga": "Kambhoji",
+    "aliases": [
+      "Anandabhairavi",
+      "Anandha Bhairavi"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-kambhoji-varnam.wav": {
+    "song": "Kambhoji Varnam",
+    "raga": "Kambhoji",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-g-kamala-sanavam-2.wav": {
+    "song": "Kamala Sanavam 2",
+    "raga": "Kambhoji",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-mayatita-swaroopini.wav": {
+    "song": "Mayatita Swaroopini",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-sankarabharanam-varnam.wav": {
+    "song": "Sankarabharanam Varnam",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-arul-puri.wav": {
+    "song": "Arul Puri",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-bhavamulona.wav": {
+    "song": "Bhavamulona",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-mayatheeta-swaroopini.wav": {
+    "song": "Mayatheeta Swaroopini",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-g-analekara.wav": {
+    "song": "Analekara",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Suddha Saveri",
+      "Suddhasaveri",
+      "Shuddha Saveri",
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-g-bhavamulona.wav": {
+    "song": "Bhavamulona",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-g-mayatita-swaroopini.wav": {
+    "song": "Mayatita Swaroopini",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-g-sakti-sahita-ganapatim.wav": {
+    "song": "Sakti Sahita Ganapatim",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-g-sankarabharanam-varnam.wav": {
+    "song": "Sankarabharanam Varnam",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-saktisahitaganapatim.wav": {
+    "song": "Saktisahitaganapatim",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-samtatam-pahimam.wav": {
+    "song": "Samtatam Pahimam",
+    "raga": "Shankarabharanam",
+    "aliases": [
+      "Sankarabharanam"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-ninnu-kori.wav": {
+    "song": "Ninnu Kori",
+    "raga": "Mohanam",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-raravenu.wav": {
+    "song": "Raravenu",
+    "raga": "Mohanam",
+    "aliases": [
+      "Swaravali",
+      "Svaravali"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-evarura.wav": {
+    "song": "Evarura",
+    "raga": "Mohanam",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-fs-raravenu.wav": {
+    "song": "Raravenu",
+    "raga": "Mohanam",
+    "aliases": [
+      "Swaravali",
+      "Svaravali"
+    ]
+  },
+  "/assets/raga-guess/kriti-g-evarura.wav": {
+    "song": "Evarura",
+    "raga": "Mohanam",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-gs-anjaneya-gunadhama.wav": {
+    "song": "Anjaneya Gunadhama",
+    "raga": "Mohanam",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-gs-ninnu-kori.wav": {
+    "song": "Ninnu Kori",
+    "raga": "Mohanam",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-ramachandraya-janaka.wav": {
+    "song": "Ramachandraya Janaka",
+    "raga": "Kedaram",
+    "aliases": [
+      "Kurinji",
+      "Kedaragaula"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-varaveena1.wav": {
+    "song": "Varaveena1",
+    "raga": "Kedaram",
+    "aliases": [
+      "Kedaragaula"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-varaveena.wav": {
+    "song": "Varaveena",
+    "raga": "Kedaram",
+    "aliases": [
+      "Kedaragaula"
+    ]
+  },
+  "/assets/raga-guess/kriti-g-varaveena.wav": {
+    "song": "Varaveena",
+    "raga": "Kedaram",
+    "aliases": [
+      "Kedaragaula"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-sarojadalanetri.wav": {
+    "song": "Sarojadalanetri",
+    "raga": "Todi",
+    "aliases": [
+      "Hanumatodi",
+      "Hanumathodi"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-sarojadalanetri.wav": {
+    "song": "Sarojadalanetri",
+    "raga": "Todi",
+    "aliases": [
+      "Hanumatodi",
+      "Hanumathodi"
+    ]
+  },
+  "/assets/raga-guess/kriti-a-sri-gananatha.wav": {
+    "song": "Sri Gananatha",
+    "raga": "Malahari",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-g-jaya-lambodhara-pahimam.wav": {
+    "song": "Jaya Lambodhara Pahimam",
+    "raga": "Malahari",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-sri-govinda.wav": {
+    "song": "Sri Govinda",
+    "raga": "Bilahari",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-g-paridana.wav": {
+    "song": "Paridana",
+    "raga": "Bilahari",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-syamale-meenakshi.wav": {
+    "song": "Syamale Meenakshi",
+    "raga": "Mukhari",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-upacharamu.wav": {
+    "song": "Upacharamu",
+    "raga": "Bhairavi",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-fs-upacharamu.wav": {
+    "song": "Upacharamu",
+    "raga": "Bhairavi",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-g-upacharamu.wav": {
+    "song": "Upacharamu",
+    "raga": "Bhairavi",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-vandanamu-raghunandana.wav": {
+    "song": "Vandanamu Raghunandana",
+    "raga": "Sahana",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-a-varaveena2.wav": {
+    "song": "Varaveena2",
+    "raga": "Surutti",
+    "aliases": [
+      "Suruti",
+      "Shuddhasaveri"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-hamsadhwani-varnam.wav": {
+    "song": "Hamsadhwani Varnam",
+    "raga": "Hamsadhwani",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-fs-vatapi.wav": {
+    "song": "Vatapi",
+    "raga": "Hamsadhwani",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-fs-kalaharana.wav": {
+    "song": "Kalaharana",
+    "raga": "Suddha Saveri",
+    "aliases": [
+      "Suddhasaveri",
+      "Shuddha Saveri"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-analekara.wav": {
+    "song": "Analekara",
+    "raga": "Suddha Saveri",
+    "aliases": [
+      "Shankarabharanam",
+      "Sankarabharanam",
+      "Suddhasaveri",
+      "Shuddha Saveri"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-ramaneepai.wav": {
+    "song": "Ramaneepai",
+    "raga": "Devagandhari",
+    "aliases": [
+      "Devgandhari"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-sita-kalyana-ksheera-sagara.wav": {
+    "song": "Sita Kalyana Ksheera Sagara",
+    "raga": "Devagandhari",
+    "aliases": [
+      "Devgandhari"
+    ]
+  },
+  "/assets/raga-guess/kriti-g-dheena-dhaya-pari-poorna.wav": {
+    "song": "Dheena Dhaya Pari Poorna",
+    "raga": "Devagandhari",
+    "aliases": [
+      "Devgandhari"
+    ]
+  },
+  "/assets/raga-guess/kriti-fs-maragatha-valli.wav": {
+    "song": "Maragatha Valli",
+    "raga": "Abhogi",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-g-maragathavalli.wav": {
+    "song": "Maragathavalli",
+    "raga": "Abhogi",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-fs-sobhillu.wav": {
+    "song": "Sobhillu",
+    "raga": "Jaganmohini",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-g-gana-ganamunaku-1.wav": {
+    "song": "Gana Ganamunaku 1",
+    "raga": "Arabhi",
+    "aliases": []
+  },
+  "/assets/raga-guess/kriti-g-sitamma-mayamma.wav": {
+    "song": "Sitamma Mayamma",
+    "raga": "Vasanta",
+    "aliases": [
+      "Vasanti"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-amba-bhavanee.wav": {
+    "song": "Amba Bhavanee",
+    "raga": "Mayamalavagowla",
+    "aliases": [
+      "Mayamalavagaula",
+      "Malavagowla",
+      "Maayamalavagowla"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-gana-ganamunaku.wav": {
+    "song": "Gana Ganamunaku",
+    "raga": "Mayamalavagowla",
+    "aliases": [
+      "Mayamalavagaula",
+      "Malavagowla",
+      "Maayamalavagowla"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-inta-tamasamelane.wav": {
+    "song": "Inta Tamasamelane",
+    "raga": "Mayamalavagowla",
+    "aliases": [
+      "Mayamalavagaula",
+      "Malavagowla",
+      "Maayamalavagowla"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-jaya-lambodhara.wav": {
+    "song": "Jaya Lambodhara",
+    "raga": "Mayamalavagowla",
+    "aliases": [
+      "Mayamalavagaula",
+      "Malavagowla",
+      "Maayamalavagowla"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-sharanu-sharanu.wav": {
+    "song": "Sharanu Sharanu",
+    "raga": "Mayamalavagowla",
+    "aliases": [
+      "Mayamalavagaula",
+      "Malavagowla",
+      "Maayamalavagowla"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-kamala-sanavam.wav": {
+    "song": "Kamala Sanavam",
+    "raga": "Anandabhairavi",
+    "aliases": [
+      "Kambhoji",
+      "Anandha Bhairavi"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-muchukumdavarada.wav": {
+    "song": "Muchukumdavarada",
+    "raga": "Anandabhairavi",
+    "aliases": [
+      "Anandha Bhairavi"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-ramachandraya-janaka.wav": {
+    "song": "Ramachandraya Janaka",
+    "raga": "Kurinji",
+    "aliases": [
+      "Kedaram",
+      "Kedaragaula"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-raravenu.wav": {
+    "song": "Raravenu",
+    "raga": "Swaravali",
+    "aliases": [
+      "Mohanam",
+      "Svaravali"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-shri-gananatham.wav": {
+    "song": "Shri Gananatham",
+    "raga": "Esha Manohari",
+    "aliases": [
+      "Eshamanohari"
+    ]
+  },
+  "/assets/raga-guess/kriti-gs-shri-ram-jaya-ram.wav": {
+    "song": "Shri Ram Jaya Ram",
+    "raga": "Sindhu Bhairavi",
+    "aliases": [
+      "Sindhubhairavi"
     ]
   }
 }
