@@ -46,7 +46,6 @@ export function RagaListenQuizClient() {
   const [guess, setGuess] = useState("");
   const [attempt, setAttempt] = useState(1);
   const [firstGuess, setFirstGuess] = useState("");
-  const [lastGuess, setLastGuess] = useState("");
   const [won, setWon] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
   const [pointsPop, setPointsPop] = useState<QuizPointsPopState | null>(null);
@@ -64,7 +63,6 @@ export function RagaListenQuizClient() {
       setRound(next);
       setGuess("");
       setFirstGuess("");
-      setLastGuess("");
       setAttempt(1);
       setWon(false);
       setPointsPop(null);
@@ -87,8 +85,7 @@ export function RagaListenQuizClient() {
     })();
   }, [startRound]);
 
-  const finishRound = async (correct: boolean, finalGuess: string) => {
-    setLastGuess(finalGuess);
+  const finishRound = async (correct: boolean) => {
     setWon(correct);
     setScore((s) => ({
       correct: s.correct + (correct ? 1 : 0),
@@ -107,12 +104,12 @@ export function RagaListenQuizClient() {
 
     const answer = buildRagaAnswer(round.answer.name, round.answer.aliases);
     if (ragaGuessMatches(trimmed, answer)) {
-      await finishRound(true, trimmed);
+      await finishRound(true);
       return;
     }
 
     if (attempt >= 2) {
-      await finishRound(false, trimmed);
+      await finishRound(false);
       return;
     }
 
@@ -271,34 +268,6 @@ export function RagaListenQuizClient() {
               )}
             >
               {won ? "Correct!" : "Not quite"}
-            </p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              {round.song ? (
-                <>
-                  <span className="font-medium text-foreground">{round.song}</span>
-                  {" — "}
-                </>
-              ) : null}
-              This recording is labeled{" "}
-              <span className="font-medium text-foreground">{round.answer.name}</span>
-              {round.answer.aliases.length > 0 && (
-                <span className="text-muted-foreground">
-                  {" "}
-                  (also accepts: {round.answer.aliases.slice(0, 4).join(", ")}
-                  {round.answer.aliases.length > 4 ? "…" : ""})
-                </span>
-              )}
-              .
-              {!won && (firstGuess || lastGuess) && (
-                <>
-                  {" "}
-                  Your guesses:{" "}
-                  <span className="font-medium text-foreground">
-                    {[firstGuess, lastGuess].filter(Boolean).join(", ")}
-                  </span>
-                  .
-                </>
-              )}
             </p>
             <Button type="button" className="mt-4" size="lg" onClick={nextRound}>
               Next clip
