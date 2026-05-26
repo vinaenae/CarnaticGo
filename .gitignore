@@ -30,9 +30,8 @@
 /data/saraga1.5_carnatic.zip
 /public/assets/saraga-guess/
 
-# KritiSamhita source (export to public/assets/kriti-guess/)
+# KritiSamhita source (export to public/assets/kriti-guess/ and raga-guess/)
 /data/kriti-samhita/
-/public/assets/kriti-guess/clips/
 
 # misc
 .DS_Store

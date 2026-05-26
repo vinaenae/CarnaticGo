@@ -50,6 +50,7 @@ export function TanpuraMatchQuizClient() {
   const [score, setScore] = useState({ correct: 0, total: 0 });
   const [pointsPop, setPointsPop] = useState<QuizPointsPopState | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [audioError, setAudioError] = useState<string | null>(null);
   const [previewKey, setPreviewKey] = useState<string | null>(null);
 
   useEffect(() => {
@@ -68,6 +69,7 @@ export function TanpuraMatchQuizClient() {
         return;
       }
       setError(null);
+      setAudioError(null);
       setClip(next);
       setChoices(shuffleKritiChoices(KRITI_TONIC_CLASSES));
       setSelected(null);
@@ -217,13 +219,22 @@ export function TanpuraMatchQuizClient() {
             <audio
               key={clip.url}
               controls
-              autoPlay
               src={clip.url}
               className="w-full max-w-md"
               preload="auto"
+              onError={() =>
+                setAudioError(
+                  "Could not load this clip. Pull latest main or refresh — quiz audio may be missing on deploy.",
+                )
+              }
             >
               Your browser does not support audio.
             </audio>
+            {audioError ? (
+              <p className="mt-2 text-sm text-destructive" role="alert">
+                {audioError}
+              </p>
+            ) : null}
             <p className="mt-2 text-xs text-muted-foreground">
               {kritiClipCredit(clip.songName)}
             </p>
