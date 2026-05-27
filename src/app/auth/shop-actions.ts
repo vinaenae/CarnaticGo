@@ -180,7 +180,7 @@ export async function purchaseShopItem(
       return {
         ok: false,
         error:
-          "Need 7 days in a row with 15+ minutes of sing-with-tāla practice. Finish a session while signed in, then refresh the shop.",
+          "Need 7 days in a row with 15+ minutes of practice. Finish a session while signed in, then refresh the shop.",
       };
     }
     if (msg.includes("maximum streak freeze inventory")) {
@@ -256,7 +256,7 @@ async function purchaseShopItemFallback(
       return {
         ok: false,
         error:
-          "Need 7 days in a row with 15+ minutes of sing-with-tāla practice. Sync practice from the shop page first.",
+          "Need 7 days in a row with 15+ minutes of practice. Sync practice from the shop page first.",
       };
     }
     patch.shop_nickname_trophies_owned = [...state.nicknameTrophiesOwned, optionId];
