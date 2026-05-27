@@ -33,6 +33,7 @@ import {
   markSingTalaSessionStarted,
 } from "@/lib/sing-tala-active-session-storage";
 import { addSingTalaPastSession } from "@/lib/sing-tala-session-storage";
+import { syncLocalPracticeToServer } from "@/lib/sync-practice-to-server";
 import { createClient } from "@/lib/supabase/client";
 import styles from "@/components/practice/WarmupSongPractice.module.css";
 
@@ -117,6 +118,7 @@ export function WarmupSongPractice({
         });
         clearSingTalaActiveSession();
         if (saved) {
+          void syncLocalPracticeToServer(user.id);
           router.push(`/practice/sing-tala/finish?pastId=${encodeURIComponent(saved.id)}`);
           return;
         }

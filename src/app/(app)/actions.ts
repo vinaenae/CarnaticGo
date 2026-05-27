@@ -116,25 +116,26 @@ export async function recordUserActivity(day?: string) {
 }
 
 export async function getStreakFreezeStatus(): Promise<{
-  armed: boolean;
-  inventory: number;
+  armedDays: number;
 }> {
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return { armed: false, inventory: 0 };
+  if (!user) return { armedDays: 0 };
 
   const { data } = await supabase
     .from("users")
-    .select("shop_streak_freeze_armed, shop_streak_freeze_inventory")
+    .select("shop_streak_freeze_armed, shop_streak_freeze_armed_days")
     .eq("id", user.id)
     .maybeSingle();
 
-  return {
-    armed: Boolean(data?.shop_streak_freeze_armed),
-    inventory: Math.max(0, data?.shop_streak_freeze_inventory ?? 0),
-  };
+  let armedDays = Math.max(0, data?.shop_streak_freeze_armed_days ?? 0);
+  if (armedDays === 0 && data?.shop_streak_freeze_armed) {
+    armedDays = 1;
+  }
+
+  return { armedDays };
 }
 
 export async function getPracticeStreak(day?: string): Promise<UserStreakSummary> {

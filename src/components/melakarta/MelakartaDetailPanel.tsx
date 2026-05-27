@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react";
 import type { MelakartaRaga } from "@/lib/melakarta72";
-import { chakraDetailForIndex } from "@/lib/melakarta-chakras";
+import { melakartaGroup, melakartaMeans } from "@/lib/melakarta-raga-meanings";
 import { melakartaRagaDetail, type MelakartaRagaDetail } from "@/lib/melakarta-raga-info";
 import { melakartaSwaraScale } from "@/lib/melakarta-swaras";
 import { cn } from "@/lib/utils";
@@ -27,9 +27,10 @@ export function MelakartaDetailPanel({ raga, className, onClose }: MelakartaDeta
     );
   }
 
-  const chakra = chakraDetailForIndex(raga.chakra);
   const detail = melakartaRagaDetail(raga);
   const scale = melakartaSwaraScale(raga.num);
+  const means = melakartaMeans(raga.num);
+  const group = melakartaGroup(raga.num);
 
   return (
     <aside
@@ -75,14 +76,17 @@ export function MelakartaDetailPanel({ raga, className, onClose }: MelakartaDeta
           <p className="text-sm text-foreground">{detail.mood}</p>
         </DetailSection>
 
-        <DetailSection title={`Chakra · ${chakra.name}`} hint="Name and note family">
+        <DetailSection title="This melakarta" hint="Name meaning and swara family for this raga">
           <p className="text-sm text-foreground">
             <span className="text-muted-foreground">Means </span>
-            {chakra.etymology}
+            {means}
           </p>
           <p className="text-sm text-foreground">
             <span className="text-muted-foreground">Group </span>
-            {chakra.grouping}
+            {group}
+          </p>
+          <p className="text-xs text-muted-foreground">
+            Parent of many janya rāgas · {raga.chakraName} chakra group
           </p>
         </DetailSection>
 

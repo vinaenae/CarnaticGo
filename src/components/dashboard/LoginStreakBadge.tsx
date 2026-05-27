@@ -25,7 +25,11 @@ export function LoginStreakBadge({ className }: { className?: string }) {
         getPracticeStreak(day),
         getStreakFreezeStatus(),
       ]);
-      setStreak({ ...summary, streakFreezeArmed: freeze.armed });
+      setStreak({
+        ...summary,
+        streakFreezeArmed: freeze.armedDays > 0,
+        streakFreezeArmedDays: freeze.armedDays,
+      });
       setLoaded(true);
     })();
   }, []);
@@ -46,8 +50,18 @@ export function LoginStreakBadge({ className }: { className?: string }) {
       <span className="font-semibold tabular-nums">{n}</span>
       <span>day log in streak</span>
       {streak.streakFreezeArmed ? (
-        <span className="text-primary" title="Streak freeze armed">
+        <span
+          className="text-primary"
+          title={
+            streak.streakFreezeArmedDays && streak.streakFreezeArmedDays > 1
+              ? `${streak.streakFreezeArmedDays}-day streak freeze armed`
+              : "Streak freeze armed"
+          }
+        >
           · ❄
+          {streak.streakFreezeArmedDays && streak.streakFreezeArmedDays > 1
+            ? streak.streakFreezeArmedDays
+            : ""}
         </span>
       ) : null}
     </p>

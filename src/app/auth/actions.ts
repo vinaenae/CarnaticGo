@@ -378,6 +378,7 @@ export type PointsLeaderboardRow = {
   quizPointsTotal: number;
   quizCorrectStreak: number;
   shopProfileBadge: string | null;
+  shopNicknameTrophy: string | null;
   is_self: boolean;
 };
 
@@ -389,11 +390,12 @@ type FriendsPointsLeaderboardRpcRow = {
   quiz_points_total: number;
   quiz_correct_streak: number;
   shop_profile_badge: string | null;
+  shop_nickname_trophy?: string | null;
   is_self: boolean;
 };
 
 const PROFILE_POINTS_SELECT =
-  "id, username, first_name, quiz_points_total, quiz_correct_streak, shop_profile_badge";
+  "id, username, first_name, quiz_points_total, quiz_correct_streak, shop_profile_badge, shop_nickname_trophy";
 
 function rankPointsLeaderboard(
   entries: {
@@ -401,6 +403,7 @@ function rankPointsLeaderboard(
     quizPointsTotal: number;
     quizCorrectStreak: number;
     shopProfileBadge: string | null;
+    shopNicknameTrophy: string | null;
   }[],
 ): PointsLeaderboardRow[] {
   const sorted = [...entries].sort((a, b) => {
@@ -421,6 +424,7 @@ function rankPointsLeaderboard(
     quizPointsTotal: row.quizPointsTotal,
     quizCorrectStreak: row.quizCorrectStreak,
     shopProfileBadge: row.shopProfileBadge,
+    shopNicknameTrophy: row.shopNicknameTrophy,
     is_self: row.profile.is_self,
   }));
 }
@@ -462,6 +466,7 @@ async function getFriendsPointsLeaderboardFromProfiles(
     quiz_points_total: number | null;
     quiz_correct_streak: number | null;
     shop_profile_badge: string | null;
+    shop_nickname_trophy: string | null;
   }[] = [];
 
   if (friendIds.length > 0) {
@@ -483,13 +488,14 @@ async function getFriendsPointsLeaderboardFromProfiles(
 
   const pointsById = new Map<
     string,
-    { total: number; streak: number; badge: string | null }
+    { total: number; streak: number; badge: string | null; nickname: string | null }
   >();
   if (selfRow) {
     pointsById.set(selfRow.id, {
       total: selfRow.quiz_points_total ?? 0,
       streak: selfRow.quiz_correct_streak ?? 0,
       badge: selfRow.shop_profile_badge ?? null,
+      nickname: selfRow.shop_nickname_trophy ?? null,
     });
   }
   for (const row of friendRows) {
@@ -497,16 +503,23 @@ async function getFriendsPointsLeaderboardFromProfiles(
       total: row.quiz_points_total ?? 0,
       streak: row.quiz_correct_streak ?? 0,
       badge: row.shop_profile_badge ?? null,
+      nickname: row.shop_nickname_trophy ?? null,
     });
   }
 
   const ranked = profiles.map((profile) => {
-    const p = pointsById.get(profile.id) ?? { total: 0, streak: 0, badge: null };
+    const p = pointsById.get(profile.id) ?? {
+      total: 0,
+      streak: 0,
+      badge: null,
+      nickname: null,
+    };
     return {
       profile,
       quizPointsTotal: p.total,
       quizCorrectStreak: p.streak,
       shopProfileBadge: p.badge,
+      shopNicknameTrophy: p.nickname,
     };
   });
 
@@ -537,6 +550,7 @@ export async function getFriendsPointsLeaderboard(): Promise<PointsLeaderboardRo
     quizPointsTotal: Math.max(0, row.quiz_points_total ?? 0),
     quizCorrectStreak: Math.max(0, row.quiz_correct_streak ?? 0),
     shopProfileBadge: row.shop_profile_badge ?? null,
+    shopNicknameTrophy: row.shop_nickname_trophy ?? null,
     is_self: row.is_self,
   }));
 }

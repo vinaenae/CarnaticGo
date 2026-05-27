@@ -1,9 +1,21 @@
+export const QUIZ_POINTS_MULTIPLIER = 1.5;
+
 /** Points for one quiz question (must match `quiz_points_for_answer` in Supabase). */
 export function quizPointsForAnswer(correct: boolean, priorCorrectStreak: number): number {
   if (correct) {
     return 1 + Math.max(0, priorCorrectStreak);
   }
   return -1;
+}
+
+/** Apply active shop 1.5× boost to positive quiz awards only. */
+export function applyQuizPointsMultiplier(
+  points: number,
+  multiplierUntilIso: string | null | undefined,
+): number {
+  if (points <= 0 || !multiplierUntilIso) return points;
+  if (new Date(multiplierUntilIso).getTime() <= Date.now()) return points;
+  return Math.round(points * QUIZ_POINTS_MULTIPLIER);
 }
 
 /** Helium float label only — always +1 or −1 regardless of streak bonuses. */
@@ -22,4 +34,5 @@ export const QUIZ_POINTS_HELP = [
   "+1 when you answer correctly in a quiz",
   "−1 when you answer incorrectly in a quiz",
   "Extra +1 for correct answer streak in a quiz",
+  "1.5× quiz points for 30 minutes after buying Points boost in the Shop",
 ] as const;

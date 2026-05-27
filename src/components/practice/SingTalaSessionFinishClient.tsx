@@ -25,6 +25,7 @@ import { createClient } from "@/lib/supabase/client";
 import { cn } from "@/lib/utils";
 import finishStyles from "@/components/practice/SingTalaSessionFinishClient.module.css";
 import { tryAwardSingTalaDailyBonus } from "@/lib/sing-tala-daily-bonus";
+import { syncLocalPracticeToServer } from "@/lib/sync-practice-to-server";
 
 export function SingTalaSessionFinishClient() {
   const router = useRouter();
@@ -79,6 +80,7 @@ export function SingTalaSessionFinishClient() {
 
   useEffect(() => {
     if (!userId) return;
+    void syncLocalPracticeToServer(userId);
     void tryAwardSingTalaDailyBonus(userId);
   }, [userId]);
 

@@ -23,6 +23,7 @@ export type UserStreakSummary = {
   bestStreak?: number;
   /** Shop: streak freeze armed for next missed day. */
   streakFreezeArmed?: boolean;
+  streakFreezeArmedDays?: number;
 };
 
 /**
@@ -196,20 +197,31 @@ export async function syncUserLoginStreakCache(
   }
 
   let days = (data ?? []).map((r) => String(r.day).slice(0, 10));
-  const yesterday = addDays(today, -1);
-  if (!days.includes(yesterday)) {
-    const { data: shopRow } = await supabase
-      .from("users")
-      .select("shop_streak_freeze_armed")
-      .eq("id", userId)
-      .maybeSingle();
-    if (shopRow?.shop_streak_freeze_armed) {
-      days = [...days, yesterday];
-      await supabase
-        .from("users")
-        .update({ shop_streak_freeze_armed: false })
-        .eq("id", userId);
+  const { data: shopRow } = await supabase
+    .from("users")
+    .select("shop_streak_freeze_armed_days, shop_streak_freeze_armed")
+    .eq("id", userId)
+    .maybeSingle();
+
+  let armedDays = Math.max(0, shopRow?.shop_streak_freeze_armed_days ?? 0);
+  if (armedDays === 0 && shopRow?.shop_streak_freeze_armed) {
+    armedDays = 1;
+  }
+
+  if (armedDays > 0) {
+    const filled: string[] = [];
+    for (let i = 1; i <= armedDays; i++) {
+      const d = addDays(today, -i);
+      if (days.includes(d)) break;
+      filled.push(d);
     }
+    if (filled.length > 0) {
+      days = [...days, ...filled];
+    }
+    await supabase
+      .from("users")
+      .update({ shop_streak_freeze_armed_days: 0, shop_streak_freeze_armed: false })
+      .eq("id", userId);
   }
 
   const summary = computeLoginStreakFromDays(days, today);

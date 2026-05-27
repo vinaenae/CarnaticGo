@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
-import { quizPointsForAnswer } from "@/lib/quiz-points";
+import { applyQuizPointsMultiplier, quizPointsForAnswer } from "@/lib/quiz-points";
 
 export type AwardQuizPointsResult =
   | {
@@ -78,7 +78,7 @@ async function awardQuizPointsViaProfileUpdate(
 ): Promise<AwardQuizPointsResult> {
   const { data: row, error: readErr } = await supabase
     .from("users")
-    .select("quiz_points_total, quiz_correct_streak")
+    .select("quiz_points_total, quiz_correct_streak, shop_points_multiplier_until")
     .eq("id", userId)
     .single();
 
@@ -89,7 +89,11 @@ async function awardQuizPointsViaProfileUpdate(
 
   const priorStreak = row.quiz_correct_streak ?? 0;
   const newStreak = correct ? priorStreak + 1 : 0;
-  const pointsAwarded = quizPointsForAnswer(correct, priorStreak);
+  const basePoints = quizPointsForAnswer(correct, priorStreak);
+  const pointsAwarded = applyQuizPointsMultiplier(
+    basePoints,
+    row.shop_points_multiplier_until ?? null,
+  );
   const quizPointsTotal = Math.max(0, (row.quiz_points_total ?? 0) + pointsAwarded);
 
   const { error: writeErr } = await supabase

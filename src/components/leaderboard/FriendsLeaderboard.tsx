@@ -1,5 +1,6 @@
 import { getFriendsPointsLeaderboard, type PointsLeaderboardRow } from "@/app/auth/actions";
 import { ProfileBadgeChip } from "@/components/shop/ProfileBadgeChip";
+import { nicknameTrophyById } from "@/lib/shop-items";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -11,6 +12,8 @@ import {
 import { cn } from "@/lib/utils";
 
 function displayName(row: PointsLeaderboardRow): string {
+  const trophy = nicknameTrophyById(row.shopNicknameTrophy);
+  if (trophy) return trophy.label;
   if (row.username) return row.username;
   if (row.first_name) return row.first_name;
   return row.is_self ? "You" : "User";
@@ -89,6 +92,11 @@ export async function FriendsLeaderboard() {
                       <p className="flex items-center gap-1.5 truncate font-medium text-foreground">
                         <ProfileBadgeChip badgeId={row.shopProfileBadge} />
                         <span className="truncate">{displayName(row)}</span>
+                        {row.shopNicknameTrophy && row.username ? (
+                          <span className="truncate text-xs font-normal text-muted-foreground">
+                            @{row.username}
+                          </span>
+                        ) : null}
                         {row.is_self ? (
                           <span className="ml-1.5 text-xs font-normal text-muted-foreground">
                             (you)
