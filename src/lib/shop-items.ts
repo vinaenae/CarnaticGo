@@ -57,8 +57,7 @@ export const STREAK_FREEZE_TIERS: {
 
 export const STREAK_FREEZE_SHOP = {
   name: "Streak freeze",
-  description:
-    "Arm before you miss login days. On your next sign-in, up to that many consecutive missed days are forgiven so your streak continues.",
+  description: "Applies on your next login.",
   icon: "snowflake" as const,
 };
 
@@ -92,7 +91,7 @@ export const SHOP_ITEMS = [
     name: "Nickname trophies",
     price: 220,
     description:
-      "Unlock a leaderboard title after 7 days in a row with 15+ minutes of sing-with-tāla practice (while signed in).",
+      "Unlock a leaderboard title after 7 days in a row with 15+ minutes of practice.",
     icon: "trophy",
   },
 ] as const;

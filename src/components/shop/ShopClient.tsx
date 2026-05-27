@@ -26,7 +26,6 @@ import {
   formatMultiplierRemaining,
   isPointsMultiplierActive,
   NICKNAME_TROPHIES,
-  PRACTICE_STREAK_MIN_MS,
   PROFILE_BADGES,
   SHOP_ITEMS,
   SHOP_POINTS_MULTIPLIER,
@@ -46,12 +45,6 @@ const ICONS = {
   zap: Zap,
   trophy: Trophy,
 } as const;
-
-function formatPracticeMin(ms: number): string {
-  const m = Math.floor(ms / 60_000);
-  const s = Math.floor((ms % 60_000) / 1000);
-  return m > 0 ? `${m}m` : `${s}s`;
-}
 
 export function ShopClient({ initialState }: { initialState: ShopState | null }) {
   const [state, setState] = useState(initialState);
@@ -329,30 +322,13 @@ export function ShopClient({ initialState }: { initialState: ShopState | null })
                       <span className="font-medium text-foreground">
                         {streakDaysDone}/7 days
                       </span>{" "}
-                      with 15+ min sing-with-tāla
+                      with 15+ min practice
                       {state.practiceStreakEligible ? (
                         <span className="ml-1 font-medium text-emerald-600 dark:text-emerald-400">
                           · Eligible
                         </span>
                       ) : null}
                     </p>
-                    <ul className="space-y-1">
-                      {state.practiceStreakDays.map((d) => (
-                        <li key={d.day} className="flex justify-between gap-2">
-                          <span>{d.day}</span>
-                          <span
-                            className={
-                              d.qualified
-                                ? "font-medium text-emerald-600 dark:text-emerald-400"
-                                : "text-muted-foreground"
-                            }
-                          >
-                            {formatPracticeMin(d.practiceMs)}
-                            {d.qualified ? " ✓" : ` / ${formatPracticeMin(PRACTICE_STREAK_MIN_MS)}`}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
                     {state.nicknameTrophiesOwned.length > 0 ? (
                       <div className="space-y-2">
                         <p className="text-foreground">Equipped nickname — switch:</p>
