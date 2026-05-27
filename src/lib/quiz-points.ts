@@ -34,5 +34,4 @@ export const QUIZ_POINTS_HELP = [
   "+1 when you answer correctly in a quiz",
   "−1 when you answer incorrectly in a quiz",
   "Extra +1 for correct answer streak in a quiz",
-  "1.5× quiz points for 30 minutes after buying Points boost in the Shop",
 ] as const;
