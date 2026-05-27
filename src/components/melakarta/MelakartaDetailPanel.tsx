@@ -85,9 +85,6 @@ export function MelakartaDetailPanel({ raga, className, onClose }: MelakartaDeta
             <span className="text-muted-foreground">Group </span>
             {group}
           </p>
-          <p className="text-xs text-muted-foreground">
-            Parent of many janya rāgas · {raga.chakraName} chakra group
-          </p>
         </DetailSection>
 
         <CompositionsSection compositions={detail.compositions} />
