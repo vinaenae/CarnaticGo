@@ -15,8 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: APP_NAME,
+  title: {
+    default: APP_NAME,
+    template: `%s — ${APP_NAME}`,
+  },
   description: "AI-powered vocal practice — pitch, rhythm, and raga intelligence.",
+  applicationName: APP_NAME,
 };
 
 export default function RootLayout({

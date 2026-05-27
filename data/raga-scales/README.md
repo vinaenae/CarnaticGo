@@ -1,6 +1,6 @@
 # Raga scales dataset (offline)
 
-Not wired into the CarnaticGo app. Built by:
+Not wired into the ragify.ai app. Built by:
 
 ```bash
 python scripts/build_raga_scales_dataset.py

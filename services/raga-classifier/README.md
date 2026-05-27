@@ -40,7 +40,7 @@ API: `POST /classify/raga?mode=quiz` or `?mode=performance`.
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
 ```
 
-The CarnaticGo web app no longer calls this service at runtime. Use it for `scripts/export_*.py` or manual API tests.
+The ragify.ai web app no longer calls this service at runtime. Use it for `scripts/export_*.py` or manual API tests.
 
 ## Supported ragas
 

@@ -14,7 +14,7 @@ from app.pipeline import classify_raga_from_bytes, ensure_model_loaded
 ClassificationMode = Literal["quiz", "performance"]
 
 app = FastAPI(
-    title="CarnaticGo Raga Classifier",
+    title="ragify.ai Raga Classifier",
     description="Quiz: jeevster/carnatic-raga-classifier. Performance: sarayusapa/sam-carnatic.",
     version="0.2.0",
 )

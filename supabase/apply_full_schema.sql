@@ -1,5 +1,5 @@
 -- =============================================================================
--- CarnaticGo — FULL schema (paste entire file in Supabase → SQL Editor → Run)
+-- ragify.ai — FULL schema (paste entire file in Supabase → SQL Editor → Run)
 -- Use this if you get: relation "public.users" does not exist
 -- Safe to run more than once (idempotent).
 --

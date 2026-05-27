@@ -36,7 +36,7 @@ Trains a **new** 4-class shruti classifier (F♯, G, G♯, A). **No pre-trained 
 |---|---|
 | **You need** | This `.ipynb` + **`Carnatic_Dataset_Snippets.zip`** from [Mendeley](https://data.mendeley.com/datasets/nkdm57hvw3/2) |
 | **You do *not* need** | `tonic_cnn.pt`, `label_map.json`, `training_report.json`, or `Carnatic_Dataset.csv` |
-| **You get after training** | *New* checkpoint files to download (optional — for deploying in CarnaticGo) |
+| **You get after training** | *New* checkpoint files to download (optional — for deploying in ragify.ai) |
 
 **Dataset license:** CC BY 4.0 · [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11286976/)
 

@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.model import ensure_model_loaded, predict_tonic_from_bytes
 
 app = FastAPI(
-    title="CarnaticGo Tonic Detector",
+    title="ragify.ai Tonic Detector",
     description="4-class shruti classifier (F#, G, G#, A) trained on KritiSamhita.",
     version="1.0.0",
 )

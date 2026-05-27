@@ -1,1 +1,1 @@
-"""Rhythm / beat alignment analysis for CarnaticGo (librosa-backed)."""
+"""Rhythm / beat alignment analysis for ragify.ai (librosa-backed)."""

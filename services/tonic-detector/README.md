@@ -68,7 +68,7 @@ Training tips:
 - **Label smoothing** 0.05 for 4-way softmax.
 - Early stopping on **validation macro-F1**, not train loss.
 
-## Serving in CarnaticGo
+## Serving in ragify.ai
 
 1. Export ONNX or TorchScript from `train_tonic.py --export-onnx`.
 2. Add FastAPI route under `services/tonic-detector/app.py` (mirror `services/raga-classifier`).

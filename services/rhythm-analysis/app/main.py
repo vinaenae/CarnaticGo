@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.pipeline import analyze_rhythm_segment
 
 app = FastAPI(
-    title="CarnaticGo Rhythm Analysis",
+    title="ragify.ai Rhythm Analysis",
     description="Librosa-backed onset + beat alignment to a fixed tala/BPM reference.",
     version="0.1.0",
 )

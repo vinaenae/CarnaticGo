@@ -16,14 +16,14 @@ _OUT = _ROOT / "data" / "kriti-samhita"
 
 
 def _api_get(url: str) -> dict:
-    req = Request(url, headers={"Accept": "application/json", "User-Agent": "CarnaticGo/1.0"})
+    req = Request(url, headers={"Accept": "application/json", "User-Agent": "ragify.ai/1.0"})
     with urlopen(req, timeout=120) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 
 def _download_file(file_id: str, dest: Path) -> None:
     url = f"https://data.mendeley.com/public-files/datasets/{_DATASET_ID}/files/{file_id}/file_downloaded"
-    req = Request(url, headers={"User-Agent": "CarnaticGo/1.0"})
+    req = Request(url, headers={"User-Agent": "ragify.ai/1.0"})
     dest.parent.mkdir(parents=True, exist_ok=True)
     print(f"Downloading {dest.name} …")
     with urlopen(req, timeout=600) as resp, dest.open("wb") as f:

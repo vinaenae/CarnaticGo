@@ -1,6 +1,6 @@
 # Rhythm analysis service (librosa + FastAPI)
 
-CarnaticGo **vocal timing** helper: onset detection and alignment to a **fixed** metronome BPM and **Adi** tala frame (8 beats per avartanam at the same click rate as the in-app metronome). No automatic tala detection, no swara/raga.
+ragify.ai **vocal timing** helper: onset detection and alignment to a **fixed** metronome BPM and **Adi** tala frame (8 beats per avartanam at the same click rate as the in-app metronome). No automatic tala detection, no swara/raga.
 
 ## Setup
 
@@ -17,7 +17,7 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Set in CarnaticGo `.env.local`:
+Set in ragify.ai `.env.local`:
 
 ```env
 RHYTHM_ANALYSIS_URL=http://127.0.0.1:8000
