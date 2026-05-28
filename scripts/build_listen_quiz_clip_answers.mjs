@@ -71,7 +71,7 @@ for (const [ragaId, urls] of Object.entries(manifest)) {
 
     out[url] = {
       song: prev.song ?? titleFromSlug(slug),
-      raga: prev.raga ?? ragaName,
+      raga: ragaName,
       aliases: uniqueAliases,
     };
   }

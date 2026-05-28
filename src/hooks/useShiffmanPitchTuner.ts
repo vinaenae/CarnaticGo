@@ -59,6 +59,8 @@ export type ShiffmanPitchTunerOptions = {
 
 const UI_UPDATE_MS = 50;
 const CREPE_POLL_MS = 66;
+/** Keep last CREPE pitch through brief RMS dips (common on phone mics). */
+const CREPE_FREQ_HOLD_MS = 280;
 
 export function useShiffmanPitchTuner(
   notes: readonly ShiffmanNote[],
@@ -88,6 +90,7 @@ export function useShiffmanPitchTuner(
   const generationRef = useRef(0);
   const gotPitchActiveRef = useRef(false);
   const drawRafRef = useRef<number | null>(null);
+  const lastPitchAtRef = useRef(0);
 
   useEffect(() => {
     notesRef.current = notes;
@@ -123,6 +126,7 @@ export function useShiffmanPitchTuner(
     ctxRef.current = null;
     yinDetectRef.current = null;
     freqRef.current = 0;
+    lastPitchAtRef.current = 0;
   }, []);
 
   /** Shiffman `draw()` — read `freq`, closest note, update meter. */
@@ -171,9 +175,14 @@ export function useShiffmanPitchTuner(
     if (crepe && engineRef.current === "ml5-crepe") {
       try {
         const frequency = await crepe.getPitch();
+        const pitchAt = performance.now();
         if (frequency != null && frequency > 55 && frequency < 2000) {
           freqRef.current = frequency;
-        } else {
+          lastPitchAtRef.current = pitchAt;
+        } else if (
+          freqRef.current <= 0 ||
+          pitchAt - lastPitchAtRef.current >= CREPE_FREQ_HOLD_MS
+        ) {
           freqRef.current = 0;
         }
       } catch {

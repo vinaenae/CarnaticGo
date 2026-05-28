@@ -90,8 +90,8 @@ export function WarmupSongPractice({
     voiceNow,
   );
 
-  const hasPitch = voiceNow && tuner.closest != null;
-  const onPoint = hasPitch && tuner.inTune;
+  const shrutiHasPitch = tuner.freq > 0 && tuner.closest != null;
+  const onPoint = shrutiHasPitch && tuner.inTune;
 
   const backToWarmup = () => {
     router.push(
@@ -134,7 +134,7 @@ export function WarmupSongPractice({
       saHz={saHz}
       enabled={shrutiEnabled}
       onEnabledChange={setShrutiEnabled}
-      hasPitch={hasPitch}
+      hasPitch={shrutiHasPitch}
       inTune={onPoint}
       onRagaHintActive={setRagaHighlight}
       onShrutiHintActive={setShrutiHighlight}

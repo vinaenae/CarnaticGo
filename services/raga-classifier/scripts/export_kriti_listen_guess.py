@@ -22,6 +22,7 @@ _RAGA_META: dict[str, dict] = {
     "Kalyani": {"melakartaNum": 65, "aliases": ["Mechakalyani"]},
     "Sreeranjani": {"melakartaNum": None, "aliases": []},
     "Asaveri": {"melakartaNum": None, "aliases": []},
+    "Saveri": {"melakartaNum": None, "aliases": ["SaavEri"]},
     "Yadukula Kambhoji": {"melakartaNum": None, "aliases": ["Yadukulakambhoji", "Kambhoji"]},
     "Hindolam": {"melakartaNum": None, "aliases": []},
     "Kambhoji": {"melakartaNum": 28, "aliases": []},
