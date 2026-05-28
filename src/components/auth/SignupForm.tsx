@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { checkEmailAvailable, checkUsernameAvailable } from "@/app/auth/actions";
+import { clearGuestSession } from "@/app/auth/guest-actions";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -32,6 +33,9 @@ function friendlyAuthError(message: string): string {
   }
   if (m.includes("users_username_lower_unique") || m.includes("unique constraint")) {
     return "That username is already taken. Choose another.";
+  }
+  if (m.includes("email not confirmed")) {
+    return "Email confirmation is still enabled in Supabase. Turn off Confirm email under Authentication → Providers → Email.";
   }
   return message;
 }
@@ -108,17 +112,36 @@ export function SignupForm() {
         },
       },
     });
-    setLoading(false);
     if (error) {
+      setLoading(false);
       toast.error(friendlyAuthError(error.message));
       return;
     }
     if (data.user && data.user.identities?.length === 0) {
+      setLoading(false);
       toast.error("An account with this email already exists. Sign in instead.");
       return;
     }
-    toast.success("Check your email to confirm, or sign in if confirmations are disabled.");
-    router.replace("/login");
+
+    if (!data.session) {
+      const { data: signInData, error: signInError } =
+        await supabase.auth.signInWithPassword({
+          email: normalizedEmail,
+          password,
+        });
+      if (signInError || !signInData.session) {
+        setLoading(false);
+        toast.error(
+          friendlyAuthError(signInError?.message ?? "Account created but sign-in failed."),
+        );
+        return;
+      }
+    }
+
+    await clearGuestSession();
+    setLoading(false);
+    toast.success("Account created — welcome!");
+    router.replace("/dashboard");
     router.refresh();
   }
 
