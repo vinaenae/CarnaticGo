@@ -17,6 +17,9 @@
     "/assets/raga-guess/kriti-a-dasaratha-nandana.wav",
     "/assets/raga-guess/kriti-gs-dasaratha-nandana.wav"
   ],
+  "Arabhi": [
+    "/assets/raga-guess/kriti-gs-sharanu-sharanu.wav"
+  ],
   "YadukulaKambhoji": [
     "/assets/raga-guess/kriti-a-hecharika.wav",
     "/assets/raga-guess/kriti-fs-jeyathu-hecharika.wav"
@@ -112,8 +115,7 @@
     "/assets/raga-guess/kriti-g-sitamma-mayamma.wav"
   ],
   "Mayamalavagowla": [
-    "/assets/raga-guess/kriti-gs-amba-bhavanee.wav",
-    "/assets/raga-guess/kriti-gs-sharanu-sharanu.wav"
+    "/assets/raga-guess/kriti-gs-amba-bhavanee.wav"
   ],
   "Anandabhairavi": [
     "/assets/raga-guess/kriti-gs-kamala-sanavam.wav",

@@ -450,12 +450,8 @@
   },
   "/assets/raga-guess/kriti-gs-sharanu-sharanu.wav": {
     "song": "Sharanu Sharanu",
-    "raga": "Mayamalavagowla",
-    "aliases": [
-      "Mayamalavagaula",
-      "Malavagowla",
-      "Maayamalavagowla"
-    ]
+    "raga": "Arabhi",
+    "aliases": []
   },
   "/assets/raga-guess/kriti-gs-kamala-sanavam.wav": {
     "song": "Kamala Sanavam",
