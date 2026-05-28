@@ -12,6 +12,7 @@
 --   6. Daily practice tracking (sing-with-tāla minutes for trophy eligibility)
 --   7. Sing-with-tāla +5 quiz bonus (once per calendar day via RPC)
 --   8. Hold-the-swara bests (per shruti key)
+--   9. Google/OAuth profile names (first_name from given_name / full_name)
 --
 -- Not in Supabase (browser only):
 --   • Past practice sessions list on home (localStorage)
@@ -231,6 +232,9 @@ $$;
 
 grant execute on function public.is_email_available(text) to anon, authenticated;
 
+comment on function public.is_email_available(text) is
+  'True when no auth.users row uses this email (case-insensitive).';
+
 create or replace function public.resolve_login_email(p_identifier text)
 returns text
 language plpgsql security definer set search_path = public stable as $$
@@ -315,11 +319,41 @@ $$;
 
 grant execute on function public.get_friends_streak_leaderboard() to authenticated;
 
+create or replace function public.first_name_from_auth_metadata(meta jsonb)
+returns text
+language sql
+immutable
+as $$
+  select nullif(
+    trim(
+      coalesce(
+        nullif(trim(meta->>'first_name'), ''),
+        nullif(trim(meta->>'given_name'), ''),
+        nullif(
+          split_part(
+            coalesce(
+              nullif(trim(meta->>'full_name'), ''),
+              nullif(trim(meta->>'name'), '')
+            ),
+            ' ',
+            1
+          ),
+          ''
+        )
+      )
+    ),
+    ''
+  );
+$$;
+
 create or replace function public.handle_new_user()
 returns trigger language plpgsql security definer set search_path = public as $$
 declare fn text; un text;
 begin
-  fn := nullif(trim(coalesce(new.raw_user_meta_data->>'first_name', '')), '');
+  fn := public.first_name_from_auth_metadata(new.raw_user_meta_data);
+  if fn is not null then
+    fn := left(fn, 80);
+  end if;
   un := public.normalize_username(coalesce(new.raw_user_meta_data->>'username', ''));
   if un = '' then un := null;
   elsif un !~ '^[a-z][a-z0-9_]{2,23}$' then un := null;
@@ -343,7 +377,7 @@ insert into public.users (id, email, first_name, username)
 select
   a.id,
   a.email,
-  nullif(trim(coalesce(a.raw_user_meta_data->>'first_name', '')), ''),
+  left(public.first_name_from_auth_metadata(a.raw_user_meta_data), 80),
   nullif(
     public.normalize_username(coalesce(a.raw_user_meta_data->>'username', '')),
     ''
@@ -351,6 +385,14 @@ select
 from auth.users a
 left join public.users u on u.id = a.id
 where u.id is null;
+
+-- Backfill first names for existing Google/OAuth users missing a profile name.
+update public.users u
+set first_name = left(public.first_name_from_auth_metadata(a.raw_user_meta_data), 80)
+from auth.users a
+where a.id = u.id
+  and (u.first_name is null or trim(u.first_name) = '')
+  and public.first_name_from_auth_metadata(a.raw_user_meta_data) is not null;
 
 -- ----- 5. Quiz points (leaderboard + shop balance) -----
 -- Scoring: correct +1 plus +1 per prior consecutive correct; wrong -1; no attempt-only points.

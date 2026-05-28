@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { checkEmailAvailable, checkUsernameAvailable } from "@/app/auth/actions";
 import { clearGuestSession } from "@/app/auth/guest-actions";
+import { AuthOAuthDivider } from "@/components/auth/AuthOAuthDivider";
+import { GoogleSignInButton } from "@/components/auth/GoogleSignInButton";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -150,8 +152,12 @@ export function SignupForm() {
       <CardHeader>
         <CardTitle className="text-2xl font-semibold tracking-tight">Create account</CardTitle>
       </CardHeader>
+      <CardContent className="space-y-4">
+        <GoogleSignInButton label="Sign up with Google" />
+        <AuthOAuthDivider />
+      </CardContent>
       <form onSubmit={onSubmit}>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-4 pt-0">
           <div className="space-y-2">
             <Label htmlFor="first-name">First name</Label>
             <Input

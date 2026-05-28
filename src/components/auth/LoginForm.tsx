@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { continueAsGuest, clearGuestSession } from "@/app/auth/guest-actions";
 import { resolveLoginEmail } from "@/app/auth/actions";
+import { AuthOAuthDivider } from "@/components/auth/AuthOAuthDivider";
+import { GoogleSignInButton } from "@/components/auth/GoogleSignInButton";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,7 +22,7 @@ import {
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 
-export function LoginForm() {
+export function LoginForm({ authError }: { authError?: string }) {
   const router = useRouter();
   const [identifier, setIdentifier] = useState("");
   const [password, setPassword] = useState("");
@@ -59,10 +61,19 @@ export function LoginForm() {
     <Card className="w-full max-w-md border-primary/20 bg-card/90 shadow-xl shadow-primary/10 ring-1 ring-primary/10 backdrop-blur-sm">
       <CardHeader>
         <CardTitle className="text-2xl font-semibold tracking-tight">Sign in</CardTitle>
-        <CardDescription>Use your email or username and password.</CardDescription>
+        <CardDescription>Use Google or your email and password.</CardDescription>
       </CardHeader>
+      <CardContent className="space-y-4">
+        <GoogleSignInButton label="Sign in with Google" />
+        <AuthOAuthDivider />
+        {authError ? (
+          <p className="text-sm text-destructive" role="alert">
+            {authError}
+          </p>
+        ) : null}
+      </CardContent>
       <form onSubmit={onSubmit}>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-4 pt-0">
           <div className="space-y-2">
             <Label htmlFor="identifier">Email or username</Label>
             <Input

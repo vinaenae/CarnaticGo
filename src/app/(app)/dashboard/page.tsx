@@ -12,7 +12,13 @@ import { cn } from "@/lib/utils";
 
 /** First name from signUp `options.data` (JWT user_metadata); use when public.users is empty or not migrated. */
 function firstNameFromAuthUser(user: { user_metadata?: Record<string, unknown> }): string | undefined {
-  const raw = user.user_metadata?.first_name ?? user.user_metadata?.given_name;
+  const raw =
+    user.user_metadata?.first_name ??
+    user.user_metadata?.given_name ??
+    (typeof user.user_metadata?.full_name === "string"
+      ? user.user_metadata.full_name.split(/\s+/)[0]
+      : undefined) ??
+    user.user_metadata?.name;
   if (typeof raw !== "string") return undefined;
   const t = raw.trim();
   return t.length > 0 ? t.slice(0, 80) : undefined;

@@ -1,7 +1,17 @@
 import { LoginForm } from "@/components/auth/LoginForm";
 import { TypewriterAppName } from "@/components/brand/TypewriterAppName";
 
-export default function LoginPage() {
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ error?: string }>;
+}) {
+  const { error } = await searchParams;
+  const authError =
+    error === "auth"
+      ? "Google sign-in failed. Try again or use email and password."
+      : undefined;
+
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 py-14">
       <div
@@ -26,7 +36,7 @@ export default function LoginPage() {
           Real-time pitch, rhythm, and raga intelligence for your practice.
         </p>
       </div>
-      <LoginForm />
+      <LoginForm authError={authError} />
     </div>
   );
 }
