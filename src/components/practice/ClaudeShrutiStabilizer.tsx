@@ -503,34 +503,6 @@ export function ClaudeShrutiStabilizer({
         {listening ? "Stop listening" : "Start listening"}
       </button>
       {tuner.error ? <p className={styles.err}>{tuner.error}</p> : null}
-
-      <p className={styles.tunerCredit}>
-        Pitch detection follows Daniel Shiffman,&nbsp;
-        <a
-          href="https://thecodingtrain.com/CodingChallenges/151-ukulele-tuner.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Coding Train #151 — Ukulele Tuner with CREPE
-        </a>
-        &nbsp;(
-        <a
-          href="https://youtu.be/F1OkDTUkKFo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          video
-        </a>
-        ,&nbsp;
-        <a
-          href="https://editor.p5js.org/codingtrain/sketches/8io2zvT03"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          p5 sketch
-        </a>
-        ). CREPE model weights from ml5.js; swara targets are Carnatic ratios × your selected Sa.
-      </p>
     </div>
   );
 }
