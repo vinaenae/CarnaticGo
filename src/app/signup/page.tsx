@@ -1,4 +1,7 @@
+import Link from "next/link";
 import { SignupForm } from "@/components/auth/SignupForm";
+import { continueAsGuest } from "@/app/auth/guest-actions";
+import { Button } from "@/components/ui/button";
 import { APP_NAME } from "@/lib/site";
 
 export default function SignupPage() {
@@ -23,6 +26,11 @@ export default function SignupPage() {
         </p>
       </div>
       <SignupForm />
+      <form action={continueAsGuest} className="relative mt-6 w-full max-w-md">
+        <Button type="submit" variant="ghost" className="w-full text-muted-foreground">
+          Continue without an account
+        </Button>
+      </form>
     </div>
   );
 }

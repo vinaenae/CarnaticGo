@@ -1,10 +1,15 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { GUEST_COOKIE_NAME, isGuestCookieValue } from "@/lib/guest-mode";
 
 const PUBLIC_PREFIXES = ["/login", "/signup", "/auth"];
 
 function isPublicPath(pathname: string) {
   return PUBLIC_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
+}
+
+function isGuestSession(request: NextRequest): boolean {
+  return isGuestCookieValue(request.cookies.get(GUEST_COOKIE_NAME)?.value);
 }
 
 export async function updateSession(request: NextRequest) {
@@ -36,8 +41,9 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   const { pathname } = request.nextUrl;
+  const guest = isGuestSession(request);
 
-  if (!user && !isPublicPath(pathname) && pathname !== "/") {
+  if (!user && !guest && !isPublicPath(pathname) && pathname !== "/") {
     const url = request.nextUrl.clone();
     url.pathname = "/login";
     return NextResponse.redirect(url);
@@ -54,7 +60,7 @@ export async function updateSession(request: NextRequest) {
 
   if (pathname === "/") {
     const url = request.nextUrl.clone();
-    url.pathname = user ? "/dashboard" : "/login";
+    url.pathname = user || guest ? "/dashboard" : "/login";
     return NextResponse.redirect(url);
   }
 

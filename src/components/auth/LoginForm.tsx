@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { continueAsGuest, clearGuestSession } from "@/app/auth/guest-actions";
 import { resolveLoginEmail } from "@/app/auth/actions";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -48,6 +49,7 @@ export function LoginForm() {
       toast.error(error.message);
       return;
     }
+    await clearGuestSession();
     toast.success("Signed in");
     router.replace("/dashboard");
     router.refresh();
@@ -100,6 +102,17 @@ export function LoginForm() {
           </Link>
         </CardFooter>
       </form>
+      <CardContent className="space-y-3 border-t border-border pt-4">
+        <form action={continueAsGuest}>
+          <Button type="submit" variant="outline" className="w-full">
+            Continue without an account
+          </Button>
+        </form>
+        <p className="text-center text-xs text-muted-foreground">
+          Guest mode: practice and quizzes work locally. Sign in to save points, shop, and
+          leaderboard.
+        </p>
+      </CardContent>
     </Card>
   );
 }
