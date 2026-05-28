@@ -14,7 +14,6 @@ import { Label } from "@/components/ui/label";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -61,7 +60,6 @@ export function LoginForm({ authError }: { authError?: string }) {
     <Card className="w-full max-w-md border-primary/20 bg-card/90 shadow-xl shadow-primary/10 ring-1 ring-primary/10 backdrop-blur-sm">
       <CardHeader>
         <CardTitle className="text-2xl font-semibold tracking-tight">Sign in</CardTitle>
-        <CardDescription>Use Google or your email and password.</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <GoogleSignInButton label="Sign in with Google" />
