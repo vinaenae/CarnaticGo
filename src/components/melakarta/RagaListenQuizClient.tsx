@@ -269,6 +269,43 @@ export function RagaListenQuizClient() {
             >
               {won ? "Correct!" : "Not quite"}
             </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              {won ? (
+                <>
+                  This clip is{" "}
+                  <span className="font-medium text-foreground">{round.answer.name}</span>
+                  {round.song ? (
+                    <>
+                      {" "}
+                      (<span className="text-foreground">{round.song}</span>)
+                    </>
+                  ) : null}
+                  .
+                </>
+              ) : (
+                <>
+                  The answer is{" "}
+                  <span className="font-medium text-foreground">{round.answer.name}</span>
+                  {round.song ? (
+                    <>
+                      {" "}
+                      (<span className="text-foreground">{round.song}</span>)
+                    </>
+                  ) : null}
+                  .
+                  {(firstGuess || guess.trim()) && (
+                    <>
+                      {" "}
+                      Your guesses:{" "}
+                      <span className="font-medium text-foreground">
+                        {[firstGuess, guess.trim()].filter(Boolean).join(", ")}
+                      </span>
+                      .
+                    </>
+                  )}
+                </>
+              )}
+            </p>
             <Button type="button" className="mt-4" size="lg" onClick={nextRound}>
               Next clip
             </Button>
