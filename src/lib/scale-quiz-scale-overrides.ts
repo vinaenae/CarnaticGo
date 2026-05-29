@@ -432,7 +432,7 @@ export const SCALE_QUIZ_SCALE_OVERRIDES: Record<string, ScaleQuizScaleOverride> 
     arohanam: "S R₂ M₁ P N₂ Ṡ",
     avarohanam: "Ṡ N₂ P M₁ G₂ R₂ S",
   },
-  Mayamalavagowla: {
+  Mayamalavagoulai: {
     name: "Mayamalavagowla",
     melakartaNum: 15,
     arohanam: "S R₁ G₃ M₁ P D₁ N₃ Ṡ",
