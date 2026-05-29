@@ -70,6 +70,20 @@ Real-time pitch detection in the warmup tuner follows Daniel Shiffman's Coding T
 
 Swara targets are computed from our Carnatic interval ratio chart times the selected Sa.
 
+The in-browser CREPE pitch detection in `src/lib/audio/ml5-crepe-pitch.ts` is **ported from ml5.js's PitchDetection module** (same algorithm, constants, and model weights), rewritten in TypeScript. ml5.js is distributed under the MIT License, reproduced below.
+
+#### ml5.js — MIT License
+
+Copyright (c) 2017 ml5
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+The CREPE pitch-tracking model (Kim, Salamon, Li, Bello, 2018) is likewise used under permissive (MIT) terms via ml5's distribution.
+
 ## Rāga scales and metadata
 
 Rāga metadata (parent/melakarta, classification, type, arohanam/avarohanam) is built from a shared data pool plus rules in code — the app does not scrape a per-rāga page at runtime.
