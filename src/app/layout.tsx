@@ -15,11 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ragifyapp.com"),
   title: {
     default: APP_NAME,
     template: `%s — ${APP_NAME}`,
   },
-  description: "AI-powered vocal practice — pitch, rhythm, and raga intelligence.",
+  description: "AI-powered vocal practice — shruti detection, tala simulation, and raga intelligence.",
   applicationName: APP_NAME,
 };
 

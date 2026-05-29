@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 const EFFECTIVE_DATE = "May 29, 2026";
-const CONTACT_EMAIL = "support@ragify.app";
+const CONTACT_EMAIL = "support@ragifyapp.com";
 
 export default function PrivacyPolicyPage() {
   return (
