@@ -1,6 +1,6 @@
-# ragify.ai
+# Ragify
 
-AI-powered Carnatic vocal practice — pitch, rhythm, and raga intelligence.
+AI-powered Carnatic vocal practice — shruti detection, tala simulation, and raga intelligence.
 
 ## Getting started
 
@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). The product name shown in the app (tab title, header, auth) is **ragify.ai** — see `src/lib/site.ts`.
+Open [http://localhost:3000](http://localhost:3000). The product name shown in the app (tab title, header, auth) is **Ragify** — see `src/lib/site.ts`.
 
 ## Deploy
 

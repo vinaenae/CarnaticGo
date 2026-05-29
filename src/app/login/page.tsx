@@ -35,7 +35,7 @@ export default async function LoginPage({
           <TypewriterAppName />
         </h1>
         <p className="mt-3 text-pretty text-sm leading-relaxed text-muted-foreground">
-          Real-time pitch, rhythm, and raga intelligence for your practice.
+          Real-time shruti detection, tala simulation, and raga intelligence for your practice.
         </p>
       </div>
       <LoginForm authError={authError} />

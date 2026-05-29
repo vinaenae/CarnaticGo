@@ -3,8 +3,8 @@ import { NoticesDocument } from "@/components/legal/NoticesDocument";
 import { loadNoticesMarkdown } from "@/lib/load-notices";
 
 export const metadata = {
-  title: "About & legal — ragify.ai",
-  description: "Attribution, licenses, and third-party data notices for ragify.ai",
+  title: "About & legal",
+  description: "Attribution, licenses, and third-party data notices for Ragify",
 };
 
 export default async function AboutLegalPage() {
@@ -23,7 +23,7 @@ export default async function AboutLegalPage() {
           About & legal
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Third-party datasets, required citations, and license terms used in ragify.ai quizzes and
+          Third-party datasets, required citations, and license terms used in Ragify quizzes and
           audio features. This page mirrors{" "}
           <code className="rounded bg-muted px-1 py-0.5 text-xs">public/NOTICES.md</code> in the
           repository.

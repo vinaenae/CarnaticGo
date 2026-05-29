@@ -1,6 +1,6 @@
 # Third-party data and licenses
 
-Attribution and license terms for datasets and models used in **ragify.ai**. An in-app copy lives at **About → About & legal** (`/about`).
+Attribution and license terms for datasets and models used in **Ragify**. An in-app copy lives at **About → About & legal** (`/about`).
 
 ## carnatic-ragas (Listen & guess)
 

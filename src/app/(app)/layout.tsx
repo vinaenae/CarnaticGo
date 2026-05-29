@@ -27,7 +27,7 @@ export default async function AppLayout({
           <Link
             href="/dashboard"
             className="font-heading text-lg text-foreground transition-colors hover:text-primary"
-            aria-label="ragify.ai home"
+            aria-label="Ragify home"
           >
             <TypewriterAppName animate={false} />
           </Link>
