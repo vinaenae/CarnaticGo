@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LoginForm } from "@/components/auth/LoginForm";
 import { OAuthCodeRedirect } from "@/components/auth/OAuthCodeRedirect";
 import { TypewriterAppName } from "@/components/brand/TypewriterAppName";
@@ -39,6 +40,15 @@ export default async function LoginPage({
         </p>
       </div>
       <LoginForm authError={authError} />
+      <p className="relative mt-6 text-center text-xs text-muted-foreground">
+        <Link href="/privacy" className="underline-offset-2 hover:text-foreground hover:underline">
+          Privacy Policy
+        </Link>
+        <span className="mx-2">·</span>
+        <Link href="/terms" className="underline-offset-2 hover:text-foreground hover:underline">
+          Terms of Service
+        </Link>
+      </p>
     </div>
   );
 }
