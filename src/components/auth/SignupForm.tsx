@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { checkEmailAvailable, checkUsernameAvailable } from "@/app/auth/actions";
-import { clearGuestSession } from "@/app/auth/guest-actions";
 import { AuthOAuthDivider } from "@/components/auth/AuthOAuthDivider";
 import { GoogleSignInButton } from "@/components/auth/GoogleSignInButton";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -140,7 +139,6 @@ export function SignupForm() {
       }
     }
 
-    await clearGuestSession();
     setLoading(false);
     toast.success("Account created — welcome!");
     router.replace("/dashboard");

@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { clearGuestSession } from "@/app/auth/guest-actions";
 import { createClient } from "@/lib/supabase/server";
 
 function safeNextPath(raw: string | null): string {
@@ -24,8 +23,6 @@ export async function GET(request: Request) {
     console.error("auth callback exchangeCodeForSession", error.message);
     return NextResponse.redirect(`${origin}/login?error=auth`);
   }
-
-  await clearGuestSession();
 
   const forwardedHost = request.headers.get("x-forwarded-host");
   const isLocalEnv = process.env.NODE_ENV === "development";

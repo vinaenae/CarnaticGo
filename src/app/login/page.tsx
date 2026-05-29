@@ -1,12 +1,13 @@
 import { LoginForm } from "@/components/auth/LoginForm";
+import { OAuthCodeRedirect } from "@/components/auth/OAuthCodeRedirect";
 import { TypewriterAppName } from "@/components/brand/TypewriterAppName";
 
 export default async function LoginPage({
   searchParams,
 }: {
-  searchParams: Promise<{ error?: string }>;
+  searchParams: Promise<{ error?: string; code?: string }>;
 }) {
-  const { error } = await searchParams;
+  const { error, code } = await searchParams;
   const authError =
     error === "auth"
       ? "Google sign-in failed. Try again or use email and password."
@@ -14,6 +15,7 @@ export default async function LoginPage({
 
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 py-14">
+      {code ? <OAuthCodeRedirect /> : null}
       <div
         className="pointer-events-none absolute -right-24 -top-24 size-[28rem] rounded-full bg-primary/20 blur-3xl"
         aria-hidden

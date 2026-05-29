@@ -1,14 +1,11 @@
 import Link from "next/link";
-import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { TypewriterAppName } from "@/components/brand/TypewriterAppName";
 import { createClient } from "@/lib/supabase/server";
 import { AppNav } from "@/components/layout/AppNav";
 import { AppMain } from "@/components/layout/AppMain";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { EngagementTracker } from "@/components/engagement/EngagementTracker";
-import { GUEST_COOKIE_NAME, isGuestCookieValue } from "@/lib/guest-mode";
-import { cn } from "@/lib/utils";
 import { signOut } from "./actions";
 
 export default async function AppLayout({
@@ -20,8 +17,7 @@ export default async function AppLayout({
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  const guest = isGuestCookieValue((await cookies()).get(GUEST_COOKIE_NAME)?.value);
-  if (!user && !guest) redirect("/login");
+  if (!user) redirect("/login");
 
   return (
     <div className="flex min-h-dvh flex-col">
@@ -37,27 +33,15 @@ export default async function AppLayout({
           </Link>
           <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
             <AppNav />
-            {user ? (
-              <form action={signOut}>
-                <Button type="submit" variant="ghost" size="sm" className="rounded-full text-muted-foreground">
-                  Sign out
-                </Button>
-              </form>
-            ) : (
-              <Link
-                href="/login"
-                className={cn(
-                  buttonVariants({ variant: "ghost", size: "sm" }),
-                  "rounded-full text-muted-foreground",
-                )}
-              >
-                Sign in
-              </Link>
-            )}
+            <form action={signOut}>
+              <Button type="submit" variant="ghost" size="sm" className="rounded-full text-muted-foreground">
+                Sign out
+              </Button>
+            </form>
           </div>
         </div>
       </header>
-      {user ? <EngagementTracker /> : null}
+      <EngagementTracker />
       <AppMain>{children}</AppMain>
     </div>
   );
