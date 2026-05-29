@@ -43,6 +43,21 @@ export default async function AppLayout({
       </header>
       <EngagementTracker />
       <AppMain>{children}</AppMain>
+      <footer className="mt-auto border-t border-border/60 py-6">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 text-xs text-muted-foreground">
+          <Link href="/about" className="transition-colors hover:text-foreground">
+            About &amp; legal
+          </Link>
+          <span aria-hidden>·</span>
+          <Link href="/privacy" className="transition-colors hover:text-foreground">
+            Privacy
+          </Link>
+          <span aria-hidden>·</span>
+          <Link href="/terms" className="transition-colors hover:text-foreground">
+            Terms
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 }
