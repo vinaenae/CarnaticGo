@@ -3,6 +3,8 @@ import { redirect } from "next/navigation";
 import { TypewriterAppName } from "@/components/brand/TypewriterAppName";
 import { createClient } from "@/lib/supabase/server";
 import { AppNav } from "@/components/layout/AppNav";
+import { LocalDevBanner } from "@/components/layout/LocalDevBanner";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { AppMain } from "@/components/layout/AppMain";
 import { Button } from "@/components/ui/button";
 import { EngagementTracker } from "@/components/engagement/EngagementTracker";
@@ -21,9 +23,10 @@ export default async function AppLayout({
 
   return (
     <div className="flex min-h-dvh flex-col">
+      <LocalDevBanner />
       <header className="sticky top-0 z-20 shrink-0 border-b border-border/60 bg-background/75 shadow-sm backdrop-blur-xl supports-[backdrop-filter]:bg-background/65">
         <div className="h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3.5">
+        <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3.5 sm:gap-4">
           <Link
             href="/dashboard"
             className="font-heading text-lg text-foreground transition-colors hover:text-primary"
@@ -31,7 +34,8 @@ export default async function AppLayout({
           >
             <TypewriterAppName animate={false} />
           </Link>
-          <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
+          <ThemeToggle />
+          <div className="ml-auto flex flex-wrap items-center justify-end gap-2 sm:gap-3">
             <AppNav />
             <form action={signOut}>
               <Button type="submit" variant="ghost" size="sm" className="rounded-full text-muted-foreground">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { getClientAppOrigin } from "@/lib/site";
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -42,7 +43,7 @@ export function GoogleSignInButton({
   async function onClick() {
     setLoading(true);
     const supabase = createClient();
-    const redirectTo = `${window.location.origin}/auth/callback?next=${encodeURIComponent(nextPath)}`;
+    const redirectTo = `${getClientAppOrigin()}/auth/callback?next=${encodeURIComponent(nextPath)}`;
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {

@@ -7,7 +7,28 @@ function isPublicPath(pathname: string) {
   return PUBLIC_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
 }
 
+function safeNextPath(raw: string | null, fallback: string): string {
+  if (!raw || !raw.startsWith("/") || raw.startsWith("//")) {
+    return fallback;
+  }
+  return raw;
+}
+
 export async function updateSession(request: NextRequest) {
+  const { pathname, searchParams } = request.nextUrl;
+
+  const oauthCode = searchParams.get("code");
+  if (oauthCode && !pathname.startsWith("/auth/callback")) {
+    const url = request.nextUrl.clone();
+    const nextParam = searchParams.get("next");
+    const fallbackNext =
+      pathname === "/login" || pathname === "/signup" ? "/dashboard" : pathname;
+    const next = safeNextPath(nextParam, fallbackNext);
+    url.pathname = "/auth/callback";
+    url.search = `code=${encodeURIComponent(oauthCode)}&next=${encodeURIComponent(next)}`;
+    return NextResponse.redirect(url);
+  }
+
   let supabaseResponse = NextResponse.next({ request });
 
   const supabase = createServerClient(
@@ -34,8 +55,6 @@ export async function updateSession(request: NextRequest) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-
-  const { pathname } = request.nextUrl;
 
   if (!user && !isPublicPath(pathname) && pathname !== "/") {
     const url = request.nextUrl.clone();

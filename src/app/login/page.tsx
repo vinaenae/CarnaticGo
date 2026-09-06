@@ -2,6 +2,7 @@ import Link from "next/link";
 import { LoginForm } from "@/components/auth/LoginForm";
 import { OAuthCodeRedirect } from "@/components/auth/OAuthCodeRedirect";
 import { TypewriterAppName } from "@/components/brand/TypewriterAppName";
+import { LocalDevBanner } from "@/components/layout/LocalDevBanner";
 
 export default async function LoginPage({
   searchParams,
@@ -15,7 +16,9 @@ export default async function LoginPage({
       : undefined;
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 py-14">
+    <div className="relative flex min-h-screen flex-col overflow-hidden">
+      <LocalDevBanner />
+      <div className="relative flex flex-1 flex-col items-center justify-center px-4 py-14">
       {code ? <OAuthCodeRedirect /> : null}
       <div
         className="pointer-events-none absolute -right-24 -top-24 size-[28rem] rounded-full bg-primary/20 blur-3xl"
@@ -49,6 +52,7 @@ export default async function LoginPage({
           Terms of Service
         </Link>
       </p>
+      </div>
     </div>
   );
 }
